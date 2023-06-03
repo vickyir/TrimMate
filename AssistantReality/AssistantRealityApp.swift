@@ -9,9 +9,22 @@ import SwiftUI
 
 @main
 struct AssistantRealityApp: App {
+    @State var splashScreen = true
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            if splashScreen{
+                SplashScreen()
+                    .onAppear{
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0){
+                            withAnimation{
+                                self.splashScreen = false
+                            }
+                        }
+                    }
+            }else{
+                ContentView()
+            }
+           
         }
     }
 }

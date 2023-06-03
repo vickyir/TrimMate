@@ -7,18 +7,45 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC6E8EB22A28954A0017962E /* ListRecommendatioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6E8EB12A28954A0017962E /* ListRecommendatioView.swift */; };
+		CC6E8EB42A2898D80017962E /* ARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6E8EB32A2898D80017962E /* ARView.swift */; };
+		CC6E8EB62A28DA710017962E /* CustomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6E8EB52A28DA710017962E /* CustomSheetView.swift */; };
+		CC6E8EB82A2905C60017962E /* Preview3dView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6E8EB72A2905C60017962E /* Preview3dView.swift */; };
+		CC6E8EBA2A2906710017962E /* 3dModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6E8EB92A2906710017962E /* 3dModelData.swift */; };
+		CC6E8EBC2A290BC90017962E /* ColorEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6E8EBB2A290BC90017962E /* ColorEnum.swift */; };
+		CC6E8EC62A29C2B90017962E /* ClassModalShow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6E8EC52A29C2B90017962E /* ClassModalShow.swift */; };
+		CC6E8EC82A29C32B0017962E /* DetailRecommendationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6E8EC72A29C32B0017962E /* DetailRecommendationView.swift */; };
+		CCB2AFE62A24080000086C46 /* PageIntro.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB2AFE52A24080000086C46 /* PageIntro.swift */; };
+		CCB2AFE82A2409E800086C46 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB2AFE72A2409E800086C46 /* Home.swift */; };
+		CCB2AFEA2A254DB500086C46 /* CustomIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB2AFE92A254DB500086C46 /* CustomIndicator.swift */; };
 		CCC679852A1FDC8200F59CA8 /* AssistantRealityApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC679842A1FDC8200F59CA8 /* AssistantRealityApp.swift */; };
 		CCC679872A1FDC8200F59CA8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC679862A1FDC8200F59CA8 /* ContentView.swift */; };
 		CCC679892A1FDC8300F59CA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCC679882A1FDC8300F59CA8 /* Assets.xcassets */; };
 		CCC6798C2A1FDC8300F59CA8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCC6798B2A1FDC8300F59CA8 /* Preview Assets.xcassets */; };
+		CCC679932A1FDC9700F59CA8 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC679922A1FDC9700F59CA8 /* SplashScreen.swift */; };
+		CCC679952A1FE07D00F59CA8 /* Yari.usdz in Resources */ = {isa = PBXBuildFile; fileRef = CCC679942A1FE07D00F59CA8 /* Yari.usdz */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CC6E8EB12A28954A0017962E /* ListRecommendatioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRecommendatioView.swift; sourceTree = "<group>"; };
+		CC6E8EB32A2898D80017962E /* ARView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARView.swift; sourceTree = "<group>"; };
+		CC6E8EB52A28DA710017962E /* CustomSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSheetView.swift; sourceTree = "<group>"; };
+		CC6E8EB72A2905C60017962E /* Preview3dView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preview3dView.swift; sourceTree = "<group>"; };
+		CC6E8EB92A2906710017962E /* 3dModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 3dModelData.swift; sourceTree = "<group>"; };
+		CC6E8EBB2A290BC90017962E /* ColorEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorEnum.swift; sourceTree = "<group>"; };
+		CC6E8EC52A29C2B90017962E /* ClassModalShow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassModalShow.swift; sourceTree = "<group>"; };
+		CC6E8EC72A29C32B0017962E /* DetailRecommendationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRecommendationView.swift; sourceTree = "<group>"; };
+		CCB2AFE52A24080000086C46 /* PageIntro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageIntro.swift; sourceTree = "<group>"; };
+		CCB2AFE72A2409E800086C46 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		CCB2AFE92A254DB500086C46 /* CustomIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomIndicator.swift; sourceTree = "<group>"; };
 		CCC679812A1FDC8200F59CA8 /* AssistantReality.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AssistantReality.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCC679842A1FDC8200F59CA8 /* AssistantRealityApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistantRealityApp.swift; sourceTree = "<group>"; };
 		CCC679862A1FDC8200F59CA8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CCC679882A1FDC8300F59CA8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CCC6798B2A1FDC8300F59CA8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CCC679922A1FDC9700F59CA8 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
+		CCC679942A1FE07D00F59CA8 /* Yari.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Yari.usdz; sourceTree = "<group>"; };
+		CCC679962A1FEB7700F59CA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +59,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CC6E8EC12A29C24B0017962E /* 3dModel */ = {
+			isa = PBXGroup;
+			children = (
+				CCC679942A1FE07D00F59CA8 /* Yari.usdz */,
+			);
+			path = 3dModel;
+			sourceTree = "<group>";
+		};
+		CC6E8EC42A29C2A40017962E /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				CC6E8EC52A29C2B90017962E /* ClassModalShow.swift */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		CCB2AFE32A2407D000086C46 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CCB2AFE52A24080000086C46 /* PageIntro.swift */,
+				CC6E8EB92A2906710017962E /* 3dModelData.swift */,
+				CC6E8EBB2A290BC90017962E /* ColorEnum.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CCB2AFE42A2407D900086C46 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CCB2AFE72A2409E800086C46 /* Home.swift */,
+				CCB2AFE92A254DB500086C46 /* CustomIndicator.swift */,
+				CC6E8EB12A28954A0017962E /* ListRecommendatioView.swift */,
+				CC6E8EB32A2898D80017962E /* ARView.swift */,
+				CC6E8EB52A28DA710017962E /* CustomSheetView.swift */,
+				CC6E8EB72A2905C60017962E /* Preview3dView.swift */,
+				CC6E8EC72A29C32B0017962E /* DetailRecommendationView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		CCC679782A1FDC8200F59CA8 = {
 			isa = PBXGroup;
 			children = (
@@ -51,8 +118,14 @@
 		CCC679832A1FDC8200F59CA8 /* AssistantReality */ = {
 			isa = PBXGroup;
 			children = (
+				CC6E8EC42A29C2A40017962E /* Class */,
+				CC6E8EC12A29C24B0017962E /* 3dModel */,
+				CCB2AFE42A2407D900086C46 /* View */,
+				CCB2AFE32A2407D000086C46 /* Model */,
+				CCC679962A1FEB7700F59CA8 /* Info.plist */,
 				CCC679842A1FDC8200F59CA8 /* AssistantRealityApp.swift */,
 				CCC679862A1FDC8200F59CA8 /* ContentView.swift */,
+				CCC679922A1FDC9700F59CA8 /* SplashScreen.swift */,
 				CCC679882A1FDC8300F59CA8 /* Assets.xcassets */,
 				CCC6798A2A1FDC8300F59CA8 /* Preview Content */,
 			);
@@ -126,6 +199,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CCC6798C2A1FDC8300F59CA8 /* Preview Assets.xcassets in Resources */,
+				CCC679952A1FE07D00F59CA8 /* Yari.usdz in Resources */,
 				CCC679892A1FDC8300F59CA8 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,8 +211,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCC679932A1FDC9700F59CA8 /* SplashScreen.swift in Sources */,
 				CCC679872A1FDC8200F59CA8 /* ContentView.swift in Sources */,
+				CCB2AFEA2A254DB500086C46 /* CustomIndicator.swift in Sources */,
+				CCB2AFE82A2409E800086C46 /* Home.swift in Sources */,
+				CC6E8EB22A28954A0017962E /* ListRecommendatioView.swift in Sources */,
+				CC6E8EB42A2898D80017962E /* ARView.swift in Sources */,
+				CC6E8EC62A29C2B90017962E /* ClassModalShow.swift in Sources */,
+				CC6E8EB62A28DA710017962E /* CustomSheetView.swift in Sources */,
 				CCC679852A1FDC8200F59CA8 /* AssistantRealityApp.swift in Sources */,
+				CC6E8EBA2A2906710017962E /* 3dModelData.swift in Sources */,
+				CC6E8EC82A29C32B0017962E /* DetailRecommendationView.swift in Sources */,
+				CC6E8EB82A2905C60017962E /* Preview3dView.swift in Sources */,
+				CC6E8EBC2A290BC90017962E /* ColorEnum.swift in Sources */,
+				CCB2AFE62A24080000086C46 /* PageIntro.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,11 +356,14 @@
 				DEVELOPMENT_TEAM = MNPQBHRKTX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AssistantReality/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Need to Show AR";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -299,11 +388,14 @@
 				DEVELOPMENT_TEAM = MNPQBHRKTX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AssistantReality/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Need to Show AR";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
