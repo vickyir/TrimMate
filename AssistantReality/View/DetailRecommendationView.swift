@@ -11,9 +11,12 @@ struct DetailRecommendationView: View {
     @StateObject var modalBtnShow = ShowModal()
     @State var hairModel: HairModel
     let size = UIScreen.main.bounds.size
+    
+    @State var showModel = false
+    
     var body: some View {
         ZStack{
-            ARViewController()
+            ARViewController(model3D: hairModel.iconName, showModel: $showModel)
                 .ignoresSafeArea()
                 .overlay(alignment: .topTrailing){
                     Button(action:{
@@ -24,6 +27,9 @@ struct DetailRecommendationView: View {
                             .foregroundColor(myColor.fourth.rawValue)
                     })
                     .padding(.trailing, 20)
+                }
+                .onTapGesture {
+                    showModel.toggle()
                 }
             BottomSheet(hairModel: hairModel)
                 .environmentObject(modalBtnShow)

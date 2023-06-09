@@ -19,6 +19,8 @@ struct Home: View {
                 NavigationLink{
                     ListRecommendatioView()
                         .navigationBarBackButtonHidden(true)
+//                    ARMatchingView()
+//                        .navigationBarBackButtonHidden(true)
                 }label: {
                     VStack(spacing: 0.0){
                         Text("START")
@@ -39,7 +41,7 @@ struct Home: View {
             }
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(Color("primary"))
+        .background(myColor.primary.rawValue)
     }
 }
 

@@ -15,6 +15,14 @@
 		CC6E8EBC2A290BC90017962E /* ColorEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6E8EBB2A290BC90017962E /* ColorEnum.swift */; };
 		CC6E8EC62A29C2B90017962E /* ClassModalShow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6E8EC52A29C2B90017962E /* ClassModalShow.swift */; };
 		CC6E8EC82A29C32B0017962E /* DetailRecommendationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6E8EC72A29C32B0017962E /* DetailRecommendationView.swift */; };
+		CC742C8F2A2F79A600E75714 /* ARMatching.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC742C8E2A2F79A600E75714 /* ARMatching.swift */; };
+		CC742CAE2A308CCC00E75714 /* 3dModelC.usdz in Resources */ = {isa = PBXBuildFile; fileRef = CC742CAA2A308CCB00E75714 /* 3dModelC.usdz */; };
+		CC742CAF2A308CCC00E75714 /* 3dModelD.usdz in Resources */ = {isa = PBXBuildFile; fileRef = CC742CAB2A308CCB00E75714 /* 3dModelD.usdz */; };
+		CC742CB02A308CCC00E75714 /* 3dModelB.usdz in Resources */ = {isa = PBXBuildFile; fileRef = CC742CAC2A308CCB00E75714 /* 3dModelB.usdz */; };
+		CC742CB32A308DA200E75714 /* 3dModelA.usdz in Resources */ = {isa = PBXBuildFile; fileRef = CC742CB22A308DA200E75714 /* 3dModelA.usdz */; };
+		CC742CBB2A31B4C100E75714 /* test.usdz in Resources */ = {isa = PBXBuildFile; fileRef = CC742CBA2A31B4C100E75714 /* test.usdz */; };
+		CC742CBD2A31B53F00E75714 /* trim.usdz in Resources */ = {isa = PBXBuildFile; fileRef = CC742CBC2A31B53F00E75714 /* trim.usdz */; };
+		CC742CBF2A31BCD600E75714 /* anchor.usdz in Resources */ = {isa = PBXBuildFile; fileRef = CC742CBE2A31BCD600E75714 /* anchor.usdz */; };
 		CCB2AFE62A24080000086C46 /* PageIntro.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB2AFE52A24080000086C46 /* PageIntro.swift */; };
 		CCB2AFE82A2409E800086C46 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB2AFE72A2409E800086C46 /* Home.swift */; };
 		CCB2AFEA2A254DB500086C46 /* CustomIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB2AFE92A254DB500086C46 /* CustomIndicator.swift */; };
@@ -24,6 +32,8 @@
 		CCC6798C2A1FDC8300F59CA8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCC6798B2A1FDC8300F59CA8 /* Preview Assets.xcassets */; };
 		CCC679932A1FDC9700F59CA8 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC679922A1FDC9700F59CA8 /* SplashScreen.swift */; };
 		CCC679952A1FE07D00F59CA8 /* Yari.usdz in Resources */ = {isa = PBXBuildFile; fileRef = CCC679942A1FE07D00F59CA8 /* Yari.usdz */; };
+		CCE801722A31C47A004918C1 /* test2.usdz in Resources */ = {isa = PBXBuildFile; fileRef = CCE801712A31C47A004918C1 /* test2.usdz */; };
+		CCE801742A324596004918C1 /* all.usdz in Resources */ = {isa = PBXBuildFile; fileRef = CCE801732A324596004918C1 /* all.usdz */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +45,14 @@
 		CC6E8EBB2A290BC90017962E /* ColorEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorEnum.swift; sourceTree = "<group>"; };
 		CC6E8EC52A29C2B90017962E /* ClassModalShow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassModalShow.swift; sourceTree = "<group>"; };
 		CC6E8EC72A29C32B0017962E /* DetailRecommendationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRecommendationView.swift; sourceTree = "<group>"; };
+		CC742C8E2A2F79A600E75714 /* ARMatching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARMatching.swift; sourceTree = "<group>"; };
+		CC742CAA2A308CCB00E75714 /* 3dModelC.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = 3dModelC.usdz; sourceTree = "<group>"; };
+		CC742CAB2A308CCB00E75714 /* 3dModelD.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = 3dModelD.usdz; sourceTree = "<group>"; };
+		CC742CAC2A308CCB00E75714 /* 3dModelB.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = 3dModelB.usdz; sourceTree = "<group>"; };
+		CC742CB22A308DA200E75714 /* 3dModelA.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = 3dModelA.usdz; sourceTree = "<group>"; };
+		CC742CBA2A31B4C100E75714 /* test.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = test.usdz; path = ../../../Assets/3d/test.usdz; sourceTree = "<group>"; };
+		CC742CBC2A31B53F00E75714 /* trim.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = trim.usdz; sourceTree = "<group>"; };
+		CC742CBE2A31BCD600E75714 /* anchor.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = anchor.usdz; sourceTree = "<group>"; };
 		CCB2AFE52A24080000086C46 /* PageIntro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageIntro.swift; sourceTree = "<group>"; };
 		CCB2AFE72A2409E800086C46 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		CCB2AFE92A254DB500086C46 /* CustomIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomIndicator.swift; sourceTree = "<group>"; };
@@ -46,6 +64,8 @@
 		CCC679922A1FDC9700F59CA8 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 		CCC679942A1FE07D00F59CA8 /* Yari.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Yari.usdz; sourceTree = "<group>"; };
 		CCC679962A1FEB7700F59CA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		CCE801712A31C47A004918C1 /* test2.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = test2.usdz; sourceTree = "<group>"; };
+		CCE801732A324596004918C1 /* all.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = all.usdz; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +82,16 @@
 		CC6E8EC12A29C24B0017962E /* 3dModel */ = {
 			isa = PBXGroup;
 			children = (
+				CC742CB22A308DA200E75714 /* 3dModelA.usdz */,
+				CC742CAC2A308CCB00E75714 /* 3dModelB.usdz */,
+				CC742CAA2A308CCB00E75714 /* 3dModelC.usdz */,
+				CC742CAB2A308CCB00E75714 /* 3dModelD.usdz */,
 				CCC679942A1FE07D00F59CA8 /* Yari.usdz */,
+				CC742CBA2A31B4C100E75714 /* test.usdz */,
+				CC742CBC2A31B53F00E75714 /* trim.usdz */,
+				CCE801712A31C47A004918C1 /* test2.usdz */,
+				CC742CBE2A31BCD600E75714 /* anchor.usdz */,
+				CCE801732A324596004918C1 /* all.usdz */,
 			);
 			path = 3dModel;
 			sourceTree = "<group>";
@@ -95,6 +124,7 @@
 				CC6E8EB52A28DA710017962E /* CustomSheetView.swift */,
 				CC6E8EB72A2905C60017962E /* Preview3dView.swift */,
 				CC6E8EC72A29C32B0017962E /* DetailRecommendationView.swift */,
+				CC742C8E2A2F79A600E75714 /* ARMatching.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -198,9 +228,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC742CAF2A308CCC00E75714 /* 3dModelD.usdz in Resources */,
+				CC742CB32A308DA200E75714 /* 3dModelA.usdz in Resources */,
 				CCC6798C2A1FDC8300F59CA8 /* Preview Assets.xcassets in Resources */,
+				CC742CB02A308CCC00E75714 /* 3dModelB.usdz in Resources */,
+				CC742CBF2A31BCD600E75714 /* anchor.usdz in Resources */,
+				CCE801742A324596004918C1 /* all.usdz in Resources */,
+				CCE801722A31C47A004918C1 /* test2.usdz in Resources */,
+				CC742CAE2A308CCC00E75714 /* 3dModelC.usdz in Resources */,
 				CCC679952A1FE07D00F59CA8 /* Yari.usdz in Resources */,
 				CCC679892A1FDC8300F59CA8 /* Assets.xcassets in Resources */,
+				CC742CBB2A31B4C100E75714 /* test.usdz in Resources */,
+				CC742CBD2A31B53F00E75714 /* trim.usdz in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,6 +258,7 @@
 				CC6E8EB42A2898D80017962E /* ARView.swift in Sources */,
 				CC6E8EC62A29C2B90017962E /* ClassModalShow.swift in Sources */,
 				CC6E8EB62A28DA710017962E /* CustomSheetView.swift in Sources */,
+				CC742C8F2A2F79A600E75714 /* ARMatching.swift in Sources */,
 				CCC679852A1FDC8200F59CA8 /* AssistantRealityApp.swift in Sources */,
 				CC6E8EBA2A2906710017962E /* 3dModelData.swift in Sources */,
 				CC6E8EC82A29C32B0017962E /* DetailRecommendationView.swift in Sources */,

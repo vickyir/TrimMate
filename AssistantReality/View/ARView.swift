@@ -10,24 +10,32 @@ import ARKit
 import RealityKit
 
 struct ARViewController: UIViewRepresentable {
+    var model3D : String
+    @Binding var showModel: Bool
+    
     func makeUIView(context: Context) -> ARView {
         let arView = ARView(frame: .zero)
-        
-        if let usdzFile = Bundle.main.url(forResource: "Yari", withExtension: "usdz") {
-            let anchor = try! Entity.load(contentsOf: usdzFile)
-            let anchorEntity = AnchorEntity()
-            anchorEntity.addChild(anchor)
-            arView.scene.addAnchor(anchorEntity)
-        
-            // Add rotation gesture recognizer
-            let rotationGesture = UIRotationGestureRecognizer(target: context.coordinator, action: #selector(Coordinator.handleRotation(_:)))
-            arView.addGestureRecognizer(rotationGesture)
-        }
         
         return arView
     }
     
-    func updateUIView(_ uiView: ARView, context: Context) {}
+    func updateUIView(_ uiView: ARView, context: Context) {
+        if showModel {
+            if let usdzFile = Bundle.main.url(forResource: "\(model3D)", withExtension: "usdz") {
+                let anchor = try! Entity.load(contentsOf: usdzFile)
+                let anchorEntity = AnchorEntity()
+                anchorEntity.addChild(anchor)
+                
+                uiView.scene.addAnchor(anchorEntity)
+                
+                // Add rotation gesture recognizer
+                let rotationGesture = UIRotationGestureRecognizer(target: context.coordinator, action: #selector(Coordinator.handleRotation(_:)))
+                uiView.addGestureRecognizer(rotationGesture)
+            }
+        } else {
+//            uiView.scene.anchors.
+        }
+    }
     
     func makeCoordinator() -> Coordinator {
         Coordinator()
@@ -51,3 +59,5 @@ struct ARViewController: UIViewRepresentable {
         }
     }
 }
+
+
