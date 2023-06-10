@@ -1,0 +1,182 @@
+{
+  "__content" : [
+    {
+      "scenes" : [
+        {
+          "__content" : [
+            {
+              "arAnchorSpecification" : {
+                "name" : "face"
+              },
+              "behaviors" : [
+
+              ],
+              "gravity" : [
+                0,
+                0,
+                9.8000001907348633
+              ],
+              "identifier" : "59BD9701-1B1E-42AE-A693-207B020A8A47",
+              "material" : "concrete",
+              "overrides" : {
+                "children" : {
+                  "0F721C3B-1D13-4D69-8193-BEF20EF68391" : {
+                    "overrides" : {
+                      "arguments" : [
+                        [
+                          "doubleSided",
+                          {
+                            "typeName" : "Bool",
+                            "value" : true
+                          }
+                        ],
+                        [
+                          "image",
+                          {
+                            "typeName" : "String",
+                            "value" : "image:55a73f0691cfc44443dc436d86fb7840\/1.png"
+                          }
+                        ],
+                        [
+                          "maxDimension",
+                          {
+                            "typeName" : "Double",
+                            "value" : 0.59399999999999997
+                          }
+                        ]
+                      ],
+                      "factory" : {
+                        "identifier" : "com.apple.rc.af.CoreAssetFactories.PosterAssetFactory",
+                        "version" : "1.0"
+                      },
+                      "runtimeAttributes" : [
+                        [
+                          "RuntimeIdentifier",
+                          {
+                            "typeName" : "UUID",
+                            "value" : "3BBBB3BF-ADED-44B5-AAD1-818DAFD67082"
+                          }
+                        ],
+                        [
+                          "rigidBody-enabled",
+                          {
+                            "typeName" : "Bool",
+                            "value" : false
+                          }
+                        ],
+                        [
+                          "rigidBody-material",
+                          {
+                            "typeName" : "RigidBodyMaterial",
+                            "value" : {
+                              "builtIn" : "concrete",
+                              "overrides" : {
+
+                              }
+                            }
+                          }
+                        ],
+                        [
+                          "rigidBody-motionType",
+                          {
+                            "typeName" : "REMotionType",
+                            "value" : "static"
+                          }
+                        ]
+                      ]
+                    },
+                    "transform" : {
+                      "matrix" : [
+                        0.91126453876495361,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0.91126453876495361,
+                        6.3029097186698829e-14,
+                        0,
+                        0,
+                        -6.3029097186698829e-14,
+                        0.91126453876495361,
+                        0,
+                        -0.0019991588778793812,
+                        0.086494222283363342,
+                        -0.011574331670999527,
+                        1
+                      ]
+                    }
+                  },
+                  "6CF86058-9AB6-4E1D-AE78-2AC592103943" : null,
+                  "A524FD8F-868C-41BF-9C05-6462FE365C4B" : null,
+                  "Cube" : null
+                },
+                "factory" : null,
+                "runtimeAttributes" : [
+                  [
+                    "isAccessibilityEnabled",
+                    {
+                      "typeName" : "Bool",
+                      "value" : false
+                    }
+                  ]
+                ]
+              },
+              "physicsMode" : "grid",
+              "title" : "Scene",
+              "viewTransform" : {
+                "cameraTransform" : [
+                  0.98561728000640869,
+                  1.5956157284335859e-08,
+                  0.16899301111698151,
+                  0,
+                  -0.0064554661512374878,
+                  0.99927014112472534,
+                  0.037650097161531448,
+                  0,
+                  -0.16886965930461884,
+                  -0.038199510425329208,
+                  0.98489785194396973,
+                  0,
+                  0.078998841345310211,
+                  0.012272118590772152,
+                  1.748587965965271,
+                  1
+                ],
+                "sceneTransform" : [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            }
+          ],
+          "__version" : 5
+        }
+      ],
+      "tags" : {
+        "__content" : [
+          {
+            "tagsStore" : {
+
+            }
+          }
+        ],
+        "__version" : 1
+      }
+    }
+  ],
+  "__version" : 1
+}

@@ -17,10 +17,10 @@ struct Home: View {
             let size = $0.size
             IntroView(intro: $activeIntro, size: size){
                 NavigationLink{
-                    ListRecommendatioView()
-                        .navigationBarBackButtonHidden(true)
-//                    ARMatchingView()
+//                    ListRecommendatioView()
 //                        .navigationBarBackButtonHidden(true)
+                    ARMatchingView()
+                        .navigationBarBackButtonHidden(true)
                 }label: {
                     VStack(spacing: 0.0){
                         Text("START")

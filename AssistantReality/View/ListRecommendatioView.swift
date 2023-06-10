@@ -72,7 +72,8 @@ struct ListRecommendatioView: View {
 //
 //                                                        }label: {
                                                         Button(action: {
-                                                            sheetHairModel = index
+                                                            
+                                                            modalBtnShow.dataHairModel = DataHairModel[index]
                                                             modalBtnShow.toggleBtn()
                                                             
                                                         }, label: {
@@ -88,10 +89,7 @@ struct ListRecommendatioView: View {
                                                             .foregroundColor(myColor.fourth.rawValue)
                                                         
                                                     }
-//                                                    .sheet(item: $sheetHairModel){
-//                                                        data in
-//                                                       CustomSheetView(hairModelData: data)
-//                                                    }
+
                                                 
                                                 }
                                                 .onAppear{
@@ -128,18 +126,24 @@ struct ListRecommendatioView: View {
                                         .foregroundColor(myColor.secondary.rawValue)
                                     
                                     VStack(spacing: 0.0) {
-                                        NavigationLink{
-                                            DetailRecommendationView(hairModel: DataHairModel[index])
-
-                                        }label: {
+//                                        NavigationLink{
+//                                            DetailRecommendationView(hairModel: DataHairModel[index])
+//
+//                                        }label: {
+                                         
+                                        Button(action: {
+                                            
+                                            modalBtnShow.dataHairModel = DataHairModel[index]
+                                            modalBtnShow.toggleBtn()
+                                            
+                                        }, label: {
                                             PreviewView(scene: $DataHairModel[index].icon)
                                                 .frame(width: 125, height: 125)
-//                                                .onTapGesture{
-//                                                    shownSheet.toggle()
-//                                                }
+                                              
+                                        })
 //                                        
                                               
-                                        }
+//                                        }
                                         
                                         Text("\(model.name)")
                                             .font(.system(size: 11, weight: .regular))
@@ -184,23 +188,51 @@ struct ListRecommendatioView: View {
                             .frame(maxWidth: .infinity, maxHeight: 73)
                             .foregroundColor(myColor.fourth.rawValue)
                             .opacity(0.8)
-                           
-                        Button(action: {
-                            
-                        }, label: {
-                            ZStack{
-                                Circle()
-                                    .frame(width: 54, height: 54)
-                                    .foregroundColor(myColor.fourth.rawValue)
-                                Circle()
-                                    .frame(width: 46, height: 46)
-                                    .foregroundColor(myColor.primary.rawValue)
-                                Image(systemName: "arrow.triangle.2.circlepath.camera.fill")
-                                    .foregroundColor(myColor.fourth.rawValue)
+                         
+                        HStack(spacing: 25){
+                            Button(action: {
                                 
+                            }, label: {
+                                ZStack{
+                                    Circle()
+                                        .frame(width: 54, height: 54)
+                                        .foregroundColor(myColor.fourth.rawValue)
+                                    Circle()
+                                        .frame(width: 46, height: 46)
+                                        .foregroundColor(myColor.primary.rawValue)
+                                  
+                                    Image(systemName: "arrow.triangle.2.circlepath.camera.fill")
+                                        .foregroundColor(myColor.fourth.rawValue)
+                                    
+                                }
+                                
+                            })
+                           
+                            NavigationLink{
+                                DetailRecommendationView(hairModel: DataHairModel)
+//                                TextArTestView()
+                            }label:{
+                                ZStack{
+                                    Circle()
+                                        .frame(width: 54, height: 54)
+                                        .foregroundColor(myColor.fourth.rawValue)
+                                    Circle()
+                                        .frame(width: 46, height: 46)
+                                        .foregroundColor(myColor.primary.rawValue)
+                                    Image(systemName: "person.and.background.dotted")
+                                        .foregroundColor(myColor.fourth.rawValue)
+                                    
+                                }
                             }
-                            
-                        })
+//                            Button(action: {
+//                                
+//                            }, label: {
+//                                
+//                                
+//                            })
+                        }
+                        .padding(.bottom, 15)
+                       
                         
                     }
     //                .opacity(hover ? 1 : 0)
@@ -212,9 +244,11 @@ struct ListRecommendatioView: View {
                     
                 }
                 .edgesIgnoringSafeArea(.bottom)
+               
 
                 BottomSheet(hairModel: DataHairModel[sheetHairModel])
                     .environmentObject(modalBtnShow)
+                   
             }
            
                         

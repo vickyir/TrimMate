@@ -6,8 +6,6 @@
 //
 
 import SwiftUI
-
-import SwiftUI
 import ARKit
 import RealityKit
 
@@ -30,11 +28,15 @@ class ARViewControllerWrapper: UIViewController, ARSessionDelegate {
         arView.frame = view.bounds
         view.addSubview(arView)
         arView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-       
+        
+        let faceShape = try! FaceShapeTest.loadScene()
         let configuration = ARFaceTrackingConfiguration()
         configuration.isLightEstimationEnabled = true
         arView.session.run(configuration)
         
+        
+        
+        //        arView.scene.anchors.append(faceShape)
         arView.session.delegate = self
     }
     
@@ -47,13 +49,58 @@ class ARViewControllerWrapper: UIViewController, ARSessionDelegate {
 
 
 struct ARMatchingView: View {
+    let gradientColors: [Color] = [.clear, Color("#03ADB5")]
+    
     @StateObject private var arSettings = ARSettings()
     
     var body: some View {
+        
         ARMatchingViewController()
+            .ignoresSafeArea().overlay(
+                ZStack{
+                    AnimatedGradientRoundedRectangle()
+                        .padding(50)
+                }
+            )
         
     }
 }
+
+struct AnimatedGradientRoundedRectangle: View {
+    @State private var offsetY: CGFloat = 0
+    
+    var body: some View {
+        RoundedRectangle(cornerRadius: 20).fill(Color.white).frame(width: 200, height: 200).overlay(
+            Rectangle()
+                .fill(
+                    LinearGradient(
+                        gradient: Gradient(colors: [
+                            Color(#colorLiteral(red: 0.01, green: 0.67, blue: 0.71, alpha: 0)),
+                            Color(#colorLiteral(red: 0.01, green: 0.67, blue: 0.71, alpha: 1))
+                        ]),
+                        startPoint: .top,
+                        endPoint: .bottom
+                    )
+                )
+                .mask(
+                    GeometryReader { geometry in
+                        RoundedRectangle(cornerRadius: 20)
+                            .fill(Color.white)
+                            .offset(y: offsetY)
+                            .frame(width: geometry.size.width, height: geometry.size.height)
+                    }
+                )
+                .animation(
+                    Animation.easeInOut(duration: 1.5)
+                        .repeatForever(autoreverses: true)
+                )
+                .onAppear {
+                    self.offsetY = -200 // Set the initial offset outside the view bounds to animate from the top
+                }).opacity(0.5)
+    }
+}
+
+
 
 class ARSettings: ObservableObject {
     // Add any additional AR settings here if needed
