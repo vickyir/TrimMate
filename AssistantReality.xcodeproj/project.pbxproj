@@ -7,6 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC5144222A33999900D5ED87 /* OvalUndercutManBun.usdz in Resources */ = {isa = PBXBuildFile; fileRef = CC5144142A33999800D5ED87 /* OvalUndercutManBun.usdz */; };
+		CC5144232A33999900D5ED87 /* OvalMessy60_40.usdz in Resources */ = {isa = PBXBuildFile; fileRef = CC5144152A33999800D5ED87 /* OvalMessy60_40.usdz */; };
+		CC5144242A33999900D5ED87 /* OvalBuzzCut.usdz in Resources */ = {isa = PBXBuildFile; fileRef = CC5144162A33999800D5ED87 /* OvalBuzzCut.usdz */; };
+		CC5144252A33999900D5ED87 /* OvalTaperSlickback.usdz in Resources */ = {isa = PBXBuildFile; fileRef = CC5144172A33999800D5ED87 /* OvalTaperSlickback.usdz */; };
+		CC5144262A33999900D5ED87 /* OvalTwobBlock.usdz in Resources */ = {isa = PBXBuildFile; fileRef = CC5144182A33999800D5ED87 /* OvalTwobBlock.usdz */; };
+		CC5144272A33999900D5ED87 /* OvalSpiky.usdz in Resources */ = {isa = PBXBuildFile; fileRef = CC5144192A33999800D5ED87 /* OvalSpiky.usdz */; };
+		CC5144282A33999900D5ED87 /* OvalFauxHawk.usdz in Resources */ = {isa = PBXBuildFile; fileRef = CC51441A2A33999800D5ED87 /* OvalFauxHawk.usdz */; };
+		CC5144292A33999900D5ED87 /* OvalShortCrewCut.usdz in Resources */ = {isa = PBXBuildFile; fileRef = CC51441B2A33999800D5ED87 /* OvalShortCrewCut.usdz */; };
+		CC51442A2A33999900D5ED87 /* OvalSlickBack.usdz in Resources */ = {isa = PBXBuildFile; fileRef = CC51441C2A33999800D5ED87 /* OvalSlickBack.usdz */; };
+		CC51442B2A33999900D5ED87 /* OvalFlatTop.usdz in Resources */ = {isa = PBXBuildFile; fileRef = CC51441D2A33999900D5ED87 /* OvalFlatTop.usdz */; };
+		CC51442C2A33999900D5ED87 /* OvalPompadour.usdz in Resources */ = {isa = PBXBuildFile; fileRef = CC51441E2A33999900D5ED87 /* OvalPompadour.usdz */; };
+		CC51442D2A33999900D5ED87 /* OvalSidePart.usdz in Resources */ = {isa = PBXBuildFile; fileRef = CC51441F2A33999900D5ED87 /* OvalSidePart.usdz */; };
+		CC51442E2A33999900D5ED87 /* OvalCurtain.usdz in Resources */ = {isa = PBXBuildFile; fileRef = CC5144202A33999900D5ED87 /* OvalCurtain.usdz */; };
+		CC51442F2A33999900D5ED87 /* OvalShortTexturedMessyFringe.usdz in Resources */ = {isa = PBXBuildFile; fileRef = CC5144212A33999900D5ED87 /* OvalShortTexturedMessyFringe.usdz */; };
+		CC51444F2A34DEC700D5ED87 /* tubeShape.usdz in Resources */ = {isa = PBXBuildFile; fileRef = CC51444E2A34DEC600D5ED87 /* tubeShape.usdz */; };
+		CC5144512A34FB4400D5ED87 /* faceShape.usdz in Resources */ = {isa = PBXBuildFile; fileRef = CC5144502A34FB4400D5ED87 /* faceShape.usdz */; };
+		CC5144542A34FE0700D5ED87 /* faceShapeTest.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = CC5144532A34FE0700D5ED87 /* faceShapeTest.rcproject */; };
 		CC6E8EB22A28954A0017962E /* ListRecommendatioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6E8EB12A28954A0017962E /* ListRecommendatioView.swift */; };
 		CC6E8EB42A2898D80017962E /* ARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6E8EB32A2898D80017962E /* ARView.swift */; };
 		CC6E8EB62A28DA710017962E /* CustomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6E8EB52A28DA710017962E /* CustomSheetView.swift */; };
@@ -16,13 +33,6 @@
 		CC6E8EC62A29C2B90017962E /* ClassModalShow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6E8EC52A29C2B90017962E /* ClassModalShow.swift */; };
 		CC6E8EC82A29C32B0017962E /* DetailRecommendationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6E8EC72A29C32B0017962E /* DetailRecommendationView.swift */; };
 		CC742C8F2A2F79A600E75714 /* ARMatching.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC742C8E2A2F79A600E75714 /* ARMatching.swift */; };
-		CC742CAE2A308CCC00E75714 /* 3dModelC.usdz in Resources */ = {isa = PBXBuildFile; fileRef = CC742CAA2A308CCB00E75714 /* 3dModelC.usdz */; };
-		CC742CAF2A308CCC00E75714 /* 3dModelD.usdz in Resources */ = {isa = PBXBuildFile; fileRef = CC742CAB2A308CCB00E75714 /* 3dModelD.usdz */; };
-		CC742CB02A308CCC00E75714 /* 3dModelB.usdz in Resources */ = {isa = PBXBuildFile; fileRef = CC742CAC2A308CCB00E75714 /* 3dModelB.usdz */; };
-		CC742CB32A308DA200E75714 /* 3dModelA.usdz in Resources */ = {isa = PBXBuildFile; fileRef = CC742CB22A308DA200E75714 /* 3dModelA.usdz */; };
-		CC742CBB2A31B4C100E75714 /* test.usdz in Resources */ = {isa = PBXBuildFile; fileRef = CC742CBA2A31B4C100E75714 /* test.usdz */; };
-		CC742CBD2A31B53F00E75714 /* trim.usdz in Resources */ = {isa = PBXBuildFile; fileRef = CC742CBC2A31B53F00E75714 /* trim.usdz */; };
-		CC742CBF2A31BCD600E75714 /* anchor.usdz in Resources */ = {isa = PBXBuildFile; fileRef = CC742CBE2A31BCD600E75714 /* anchor.usdz */; };
 		CCB2AFE62A24080000086C46 /* PageIntro.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB2AFE52A24080000086C46 /* PageIntro.swift */; };
 		CCB2AFE82A2409E800086C46 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB2AFE72A2409E800086C46 /* Home.swift */; };
 		CCB2AFEA2A254DB500086C46 /* CustomIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB2AFE92A254DB500086C46 /* CustomIndicator.swift */; };
@@ -31,12 +41,26 @@
 		CCC679892A1FDC8300F59CA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCC679882A1FDC8300F59CA8 /* Assets.xcassets */; };
 		CCC6798C2A1FDC8300F59CA8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCC6798B2A1FDC8300F59CA8 /* Preview Assets.xcassets */; };
 		CCC679932A1FDC9700F59CA8 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC679922A1FDC9700F59CA8 /* SplashScreen.swift */; };
-		CCC679952A1FE07D00F59CA8 /* Yari.usdz in Resources */ = {isa = PBXBuildFile; fileRef = CCC679942A1FE07D00F59CA8 /* Yari.usdz */; };
-		CCE801722A31C47A004918C1 /* test2.usdz in Resources */ = {isa = PBXBuildFile; fileRef = CCE801712A31C47A004918C1 /* test2.usdz */; };
-		CCE801742A324596004918C1 /* all.usdz in Resources */ = {isa = PBXBuildFile; fileRef = CCE801732A324596004918C1 /* all.usdz */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CC5144142A33999800D5ED87 /* OvalUndercutManBun.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = OvalUndercutManBun.usdz; sourceTree = "<group>"; };
+		CC5144152A33999800D5ED87 /* OvalMessy60_40.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = OvalMessy60_40.usdz; sourceTree = "<group>"; };
+		CC5144162A33999800D5ED87 /* OvalBuzzCut.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = OvalBuzzCut.usdz; sourceTree = "<group>"; };
+		CC5144172A33999800D5ED87 /* OvalTaperSlickback.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = OvalTaperSlickback.usdz; sourceTree = "<group>"; };
+		CC5144182A33999800D5ED87 /* OvalTwobBlock.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = OvalTwobBlock.usdz; sourceTree = "<group>"; };
+		CC5144192A33999800D5ED87 /* OvalSpiky.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = OvalSpiky.usdz; sourceTree = "<group>"; };
+		CC51441A2A33999800D5ED87 /* OvalFauxHawk.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = OvalFauxHawk.usdz; sourceTree = "<group>"; };
+		CC51441B2A33999800D5ED87 /* OvalShortCrewCut.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = OvalShortCrewCut.usdz; sourceTree = "<group>"; };
+		CC51441C2A33999800D5ED87 /* OvalSlickBack.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = OvalSlickBack.usdz; sourceTree = "<group>"; };
+		CC51441D2A33999900D5ED87 /* OvalFlatTop.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = OvalFlatTop.usdz; sourceTree = "<group>"; };
+		CC51441E2A33999900D5ED87 /* OvalPompadour.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = OvalPompadour.usdz; sourceTree = "<group>"; };
+		CC51441F2A33999900D5ED87 /* OvalSidePart.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = OvalSidePart.usdz; sourceTree = "<group>"; };
+		CC5144202A33999900D5ED87 /* OvalCurtain.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = OvalCurtain.usdz; sourceTree = "<group>"; };
+		CC5144212A33999900D5ED87 /* OvalShortTexturedMessyFringe.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = OvalShortTexturedMessyFringe.usdz; sourceTree = "<group>"; };
+		CC51444E2A34DEC600D5ED87 /* tubeShape.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = tubeShape.usdz; sourceTree = "<group>"; };
+		CC5144502A34FB4400D5ED87 /* faceShape.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = faceShape.usdz; sourceTree = "<group>"; };
+		CC5144532A34FE0700D5ED87 /* faceShapeTest.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = faceShapeTest.rcproject; sourceTree = "<group>"; };
 		CC6E8EB12A28954A0017962E /* ListRecommendatioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRecommendatioView.swift; sourceTree = "<group>"; };
 		CC6E8EB32A2898D80017962E /* ARView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARView.swift; sourceTree = "<group>"; };
 		CC6E8EB52A28DA710017962E /* CustomSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSheetView.swift; sourceTree = "<group>"; };
@@ -46,13 +70,6 @@
 		CC6E8EC52A29C2B90017962E /* ClassModalShow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassModalShow.swift; sourceTree = "<group>"; };
 		CC6E8EC72A29C32B0017962E /* DetailRecommendationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRecommendationView.swift; sourceTree = "<group>"; };
 		CC742C8E2A2F79A600E75714 /* ARMatching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARMatching.swift; sourceTree = "<group>"; };
-		CC742CAA2A308CCB00E75714 /* 3dModelC.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = 3dModelC.usdz; sourceTree = "<group>"; };
-		CC742CAB2A308CCB00E75714 /* 3dModelD.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = 3dModelD.usdz; sourceTree = "<group>"; };
-		CC742CAC2A308CCB00E75714 /* 3dModelB.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = 3dModelB.usdz; sourceTree = "<group>"; };
-		CC742CB22A308DA200E75714 /* 3dModelA.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = 3dModelA.usdz; sourceTree = "<group>"; };
-		CC742CBA2A31B4C100E75714 /* test.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = test.usdz; path = ../../../Assets/3d/test.usdz; sourceTree = "<group>"; };
-		CC742CBC2A31B53F00E75714 /* trim.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = trim.usdz; sourceTree = "<group>"; };
-		CC742CBE2A31BCD600E75714 /* anchor.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = anchor.usdz; sourceTree = "<group>"; };
 		CCB2AFE52A24080000086C46 /* PageIntro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageIntro.swift; sourceTree = "<group>"; };
 		CCB2AFE72A2409E800086C46 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		CCB2AFE92A254DB500086C46 /* CustomIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomIndicator.swift; sourceTree = "<group>"; };
@@ -62,10 +79,7 @@
 		CCC679882A1FDC8300F59CA8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CCC6798B2A1FDC8300F59CA8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CCC679922A1FDC9700F59CA8 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
-		CCC679942A1FE07D00F59CA8 /* Yari.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Yari.usdz; sourceTree = "<group>"; };
 		CCC679962A1FEB7700F59CA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		CCE801712A31C47A004918C1 /* test2.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = test2.usdz; sourceTree = "<group>"; };
-		CCE801732A324596004918C1 /* all.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = all.usdz; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,19 +93,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CC5144522A34FDC600D5ED87 /* RealityComposer */ = {
+			isa = PBXGroup;
+			children = (
+				CC5144532A34FE0700D5ED87 /* faceShapeTest.rcproject */,
+			);
+			path = RealityComposer;
+			sourceTree = "<group>";
+		};
 		CC6E8EC12A29C24B0017962E /* 3dModel */ = {
 			isa = PBXGroup;
 			children = (
-				CC742CB22A308DA200E75714 /* 3dModelA.usdz */,
-				CC742CAC2A308CCB00E75714 /* 3dModelB.usdz */,
-				CC742CAA2A308CCB00E75714 /* 3dModelC.usdz */,
-				CC742CAB2A308CCB00E75714 /* 3dModelD.usdz */,
-				CCC679942A1FE07D00F59CA8 /* Yari.usdz */,
-				CC742CBA2A31B4C100E75714 /* test.usdz */,
-				CC742CBC2A31B53F00E75714 /* trim.usdz */,
-				CCE801712A31C47A004918C1 /* test2.usdz */,
-				CC742CBE2A31BCD600E75714 /* anchor.usdz */,
-				CCE801732A324596004918C1 /* all.usdz */,
+				CC5144502A34FB4400D5ED87 /* faceShape.usdz */,
+				CC51444E2A34DEC600D5ED87 /* tubeShape.usdz */,
+				CC5144162A33999800D5ED87 /* OvalBuzzCut.usdz */,
+				CC5144202A33999900D5ED87 /* OvalCurtain.usdz */,
+				CC51441A2A33999800D5ED87 /* OvalFauxHawk.usdz */,
+				CC51441D2A33999900D5ED87 /* OvalFlatTop.usdz */,
+				CC5144152A33999800D5ED87 /* OvalMessy60_40.usdz */,
+				CC51441E2A33999900D5ED87 /* OvalPompadour.usdz */,
+				CC51441B2A33999800D5ED87 /* OvalShortCrewCut.usdz */,
+				CC5144212A33999900D5ED87 /* OvalShortTexturedMessyFringe.usdz */,
+				CC51441F2A33999900D5ED87 /* OvalSidePart.usdz */,
+				CC51441C2A33999800D5ED87 /* OvalSlickBack.usdz */,
+				CC5144192A33999800D5ED87 /* OvalSpiky.usdz */,
+				CC5144172A33999800D5ED87 /* OvalTaperSlickback.usdz */,
+				CC5144182A33999800D5ED87 /* OvalTwobBlock.usdz */,
+				CC5144142A33999800D5ED87 /* OvalUndercutManBun.usdz */,
 			);
 			path = 3dModel;
 			sourceTree = "<group>";
@@ -148,6 +176,7 @@
 		CCC679832A1FDC8200F59CA8 /* AssistantReality */ = {
 			isa = PBXGroup;
 			children = (
+				CC5144522A34FDC600D5ED87 /* RealityComposer */,
 				CC6E8EC42A29C2A40017962E /* Class */,
 				CC6E8EC12A29C24B0017962E /* 3dModel */,
 				CCB2AFE42A2407D900086C46 /* View */,
@@ -228,18 +257,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC742CAF2A308CCC00E75714 /* 3dModelD.usdz in Resources */,
-				CC742CB32A308DA200E75714 /* 3dModelA.usdz in Resources */,
 				CCC6798C2A1FDC8300F59CA8 /* Preview Assets.xcassets in Resources */,
-				CC742CB02A308CCC00E75714 /* 3dModelB.usdz in Resources */,
-				CC742CBF2A31BCD600E75714 /* anchor.usdz in Resources */,
-				CCE801742A324596004918C1 /* all.usdz in Resources */,
-				CCE801722A31C47A004918C1 /* test2.usdz in Resources */,
-				CC742CAE2A308CCC00E75714 /* 3dModelC.usdz in Resources */,
-				CCC679952A1FE07D00F59CA8 /* Yari.usdz in Resources */,
+				CC5144222A33999900D5ED87 /* OvalUndercutManBun.usdz in Resources */,
+				CC5144292A33999900D5ED87 /* OvalShortCrewCut.usdz in Resources */,
 				CCC679892A1FDC8300F59CA8 /* Assets.xcassets in Resources */,
-				CC742CBB2A31B4C100E75714 /* test.usdz in Resources */,
-				CC742CBD2A31B53F00E75714 /* trim.usdz in Resources */,
+				CC51444F2A34DEC700D5ED87 /* tubeShape.usdz in Resources */,
+				CC51442C2A33999900D5ED87 /* OvalPompadour.usdz in Resources */,
+				CC51442D2A33999900D5ED87 /* OvalSidePart.usdz in Resources */,
+				CC51442B2A33999900D5ED87 /* OvalFlatTop.usdz in Resources */,
+				CC5144262A33999900D5ED87 /* OvalTwobBlock.usdz in Resources */,
+				CC51442F2A33999900D5ED87 /* OvalShortTexturedMessyFringe.usdz in Resources */,
+				CC5144512A34FB4400D5ED87 /* faceShape.usdz in Resources */,
+				CC5144272A33999900D5ED87 /* OvalSpiky.usdz in Resources */,
+				CC5144242A33999900D5ED87 /* OvalBuzzCut.usdz in Resources */,
+				CC51442A2A33999900D5ED87 /* OvalSlickBack.usdz in Resources */,
+				CC51442E2A33999900D5ED87 /* OvalCurtain.usdz in Resources */,
+				CC5144282A33999900D5ED87 /* OvalFauxHawk.usdz in Resources */,
+				CC5144252A33999900D5ED87 /* OvalTaperSlickback.usdz in Resources */,
+				CC5144232A33999900D5ED87 /* OvalMessy60_40.usdz in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +286,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CCC679932A1FDC9700F59CA8 /* SplashScreen.swift in Sources */,
+				CC5144542A34FE0700D5ED87 /* faceShapeTest.rcproject in Sources */,
 				CCC679872A1FDC8200F59CA8 /* ContentView.swift in Sources */,
 				CCB2AFEA2A254DB500086C46 /* CustomIndicator.swift in Sources */,
 				CCB2AFE82A2409E800086C46 /* Home.swift in Sources */,

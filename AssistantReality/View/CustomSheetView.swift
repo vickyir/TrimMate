@@ -9,19 +9,20 @@ import SwiftUI
 
 struct CustomSheetView: View {
     @EnvironmentObject var modalShow: ShowModal
-    @State var hairModelData: HairModel
+    @Binding var hairModelData: HairModel
     var body: some View {
         
         ZStack{
             RoundedRectangle(cornerRadius: 35)
                 .background(Color.clear)
-                .frame(width: 331, height: 598)
+                .frame(width: 340, height: 555)
                 .foregroundColor(myColor.secondary.rawValue)
+                .shadow(radius: 2, x: 4, y: 4)
             
             VStack(spacing: 30){
                 
                 HStack{
-                    Text("\(hairModelData.name)")
+                    Text("\(modalShow.dataHairModel.name)")
                         .font(.system(size: 21, weight: .bold))
                         .foregroundColor(myColor.fourth.rawValue)
                     Spacer()
@@ -39,11 +40,11 @@ struct CustomSheetView: View {
                     RoundedRectangle(cornerRadius: 15)
                         .frame(width: 210, height: 230)
                         .foregroundColor(myColor.primary.rawValue)
-                    PreviewView(scene: $hairModelData.icon)
+                    PreviewView(scene: $modalShow.dataHairModel.icon)
                         .frame(width: 210, height: 210)
                 }
                 ScrollView(.vertical, showsIndicators: false){
-                    Text("\(hairModelData.description)")
+                    Text("\(modalShow.dataHairModel.description)")
                         .font(.system(size: 16, weight: .light))
                         .foregroundColor(myColor.fourth.rawValue)
                         .padding(.horizontal)
@@ -94,7 +95,7 @@ struct CustomSheetView_Previews: PreviewProvider {
 struct BottomSheet: View {
 
     @EnvironmentObject var isShowing: ShowModal
-    @State var hairModel: HairModel
+    @State var hairModel: HairModel 
     
     var body: some View {
         
@@ -102,7 +103,7 @@ struct BottomSheet: View {
             geo in
             
             if isShowing.isActive{
-               CustomSheetView(hairModelData: hairModel)
+               CustomSheetView(hairModelData: $hairModel)
                     .environmentObject(isShowing)
                 .position(x: geo.size.width/2, y: geo.size.height/2)
                 .animation(.easeInOut, value: isShowing.isActive)
@@ -112,5 +113,7 @@ struct BottomSheet: View {
             
         }
         .animation(.easeInOut, value: isShowing.isActive)
+      
     }
 }
+
