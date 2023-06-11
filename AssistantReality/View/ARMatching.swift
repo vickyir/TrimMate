@@ -10,6 +10,7 @@ import ARKit
 import RealityKit
 
 struct ARMatchingViewController: UIViewControllerRepresentable {
+    
     func makeUIViewController(context: Context) -> ARViewControllerWrapper {
         let viewController = ARViewControllerWrapper()
         viewController.arView.session = ARSession()
@@ -22,6 +23,7 @@ struct ARMatchingViewController: UIViewControllerRepresentable {
 class ARViewControllerWrapper: UIViewController, ARSessionDelegate {
     let arView = ARView(frame: .zero)
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -30,73 +32,136 @@ class ARViewControllerWrapper: UIViewController, ARSessionDelegate {
         arView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         
         let faceShape = try! FaceShapeTest.loadScene()
+        
+        
+        
         let configuration = ARFaceTrackingConfiguration()
         configuration.isLightEstimationEnabled = true
         arView.session.run(configuration)
         
         
         
-        //        arView.scene.anchors.append(faceShape)
+        arView.scene.anchors.append(faceShape)
         arView.session.delegate = self
     }
     
     func session(_ session: ARSession, didUpdate frame: ARFrame) {
         // Access the front camera frame
-        let camera = frame.camera
+        let _ = frame.camera
         // Use the camera data as needed
     }
 }
 
 
 struct ARMatchingView: View {
-    let gradientColors: [Color] = [.clear, Color("#03ADB5")]
-    
+    @AppStorage("faceshape") var myFaceShape: String = ""
     @StateObject private var arSettings = ARSettings()
+    @State var index : Int = 0
     
     var body: some View {
-        
-        ARMatchingViewController()
-            .ignoresSafeArea().overlay(
-                ZStack{
-                    AnimatedGradientRoundedRectangle()
-                        .padding(50)
+        NavigationView{
+            ZStack{
+                ARMatchingViewController()
+                    .ignoresSafeArea()
+                    .onTapGesture {
+                        if index == 3{
+                            index = 0
+                        }else{
+                            index += 1
+                        }
+                        
+                        if index == 0{
+                            myFaceShape = "diamond"
+                        }else if index == 1{
+                            myFaceShape = "rounded"
+                        }else if index == 2{
+                            myFaceShape = "oval"
+                        }else{
+                            myFaceShape = "circle"
+                        }
+                        
+                    }
+                
+                VStack{
+                    AnimatedGradientRoundedRectangle(selectedFaceShape: $index)
+                        
+                    NavigationLink{
+                        ListRecommendatioView()
+                            .navigationBarBackButtonHidden(true)
+                    }label: {
+                      
+                        ZStack{
+                            RoundedRectangle(cornerRadius: 10)
+                                .frame(width: .infinity, height: 47)
+                                .foregroundColor(myColor.fourth.rawValue)
+                            Text("Select")
+                                .font(.system(size: 14, weight: .semibold))
+                                .foregroundColor(myColor.primary.rawValue)
+                                .tracking(0.54)
+                            
+                        }
+
+                        //                    })
+                    }
+                   
                 }
-            )
+                .padding(50)
+              
+            }
+            
+        }
+            
+        
+        
         
     }
 }
 
 struct AnimatedGradientRoundedRectangle: View {
     @State private var offsetY: CGFloat = 0
-    
+    @Binding var selectedFaceShape: Int
     var body: some View {
-        RoundedRectangle(cornerRadius: 20).fill(Color.white).frame(width: 200, height: 200).overlay(
-            Rectangle()
-                .fill(
-                    LinearGradient(
-                        gradient: Gradient(colors: [
-                            Color(#colorLiteral(red: 0.01, green: 0.67, blue: 0.71, alpha: 0)),
-                            Color(#colorLiteral(red: 0.01, green: 0.67, blue: 0.71, alpha: 1))
-                        ]),
-                        startPoint: .top,
-                        endPoint: .bottom
-                    )
-                )
-                .mask(
-                    GeometryReader { geometry in
-                        RoundedRectangle(cornerRadius: 20)
-                            .fill(Color.white)
-                            .offset(y: offsetY)
-                            .frame(width: geometry.size.width, height: geometry.size.height)
+        
+        GeometryReader{
+            geo in
+            
+            VStack{
+                
+                HStack{
+                    ForEach(0..<4){
+                        index in
+                        //                        Button(action: {
+                        //                            self.selectedFaceShape = index
+                        //                        }, label: {
+                        ZStack{
+                            RoundedRectangle(cornerRadius: 10)
+                                .frame(width: 73, height: 73)
+                                .foregroundColor(myColor.primary.rawValue)
+                                .overlay(
+                                    RoundedRectangle(cornerRadius: 10)
+                                        .stroke(myColor.third.rawValue, lineWidth: selectedFaceShape == index ? 1 : 0)
+                                )
+                            Image("\(index+1)")
+                                .resizable()
+                                .frame(maxWidth: 80, maxHeight: 80)
+                        }
+                        //                        })
+                        
                     }
-                )
-                .animation(
-                    Animation.easeInOut(duration: 1.5)
-                        .repeatForever(autoreverses: true)
-                )
-                .onAppear {
-                    self.offsetY = -200 // Set the initial offset outside the view bounds to animate from the top
-                }).opacity(0.5)
+                    
+                }
+                .position(x: geo.size.width/2, y: geo.size.height/1.2)
+                
+                
+
+                
+                
+            }
+        }
+        
+        
+        
+        
     }
 }
 

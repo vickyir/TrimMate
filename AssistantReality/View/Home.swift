@@ -12,36 +12,45 @@ import SwiftUI
 
 struct Home: View {
     @State private var activeIntro: PageIntro =  pageIntros[0]
+    @AppStorage("faceshape") var myFaceShape: String = ""
     var body: some View {
-        GeometryReader{
-            let size = $0.size
-            IntroView(intro: $activeIntro, size: size){
-                NavigationLink{
-//                    ListRecommendatioView()
-//                        .navigationBarBackButtonHidden(true)
-                    ARMatchingView()
-                        .navigationBarBackButtonHidden(true)
-                }label: {
-                    VStack(spacing: 0.0){
-                        Text("START")
-                            .fontWeight(.semibold)
-                            .font(.system(size: 14))
-                            .foregroundColor(myColor.primary.rawValue)
-                            .frame(width: size.width*0.2)
-                            .padding(.vertical, 10)
-                            .background{
-                                Capsule()
-                                    .fill(myColor.fourth.rawValue)
+        
+        return Group{
+            if myFaceShape != "" {
+                ListRecommendatioView()
+            }else{
+                GeometryReader{
+                    let size = $0.size
+                    IntroView(intro: $activeIntro, size: size){
+                        NavigationLink{
+        //                    ListRecommendatioView()
+        //                        .navigationBarBackButtonHidden(true)
+                            ARMatchingView()
+                                .navigationBarBackButtonHidden(true)
+                        }label: {
+                            VStack(spacing: 0.0){
+                                Text("START")
+                                    .fontWeight(.semibold)
+                                    .font(.system(size: 14))
+                                    .foregroundColor(myColor.primary.rawValue)
+                                    .frame(width: size.width*0.2)
+                                    .padding(.vertical, 10)
+                                    .background{
+                                        Capsule()
+                                            .fill(myColor.fourth.rawValue)
+                                    }
+                                    .padding(.top)
                             }
-                            .padding(.top)
-                    }
-                    .frame(maxWidth: .infinity, alignment: .leading)
+                            .frame(maxWidth: .infinity, alignment: .leading)
 
+                        }
+                    }
                 }
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                .background(myColor.primary.rawValue)
+
             }
         }
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(myColor.primary.rawValue)
     }
 }
 

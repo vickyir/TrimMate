@@ -22,8 +22,15 @@
 		CC51442E2A33999900D5ED87 /* OvalCurtain.usdz in Resources */ = {isa = PBXBuildFile; fileRef = CC5144202A33999900D5ED87 /* OvalCurtain.usdz */; };
 		CC51442F2A33999900D5ED87 /* OvalShortTexturedMessyFringe.usdz in Resources */ = {isa = PBXBuildFile; fileRef = CC5144212A33999900D5ED87 /* OvalShortTexturedMessyFringe.usdz */; };
 		CC51444F2A34DEC700D5ED87 /* tubeShape.usdz in Resources */ = {isa = PBXBuildFile; fileRef = CC51444E2A34DEC600D5ED87 /* tubeShape.usdz */; };
-		CC5144512A34FB4400D5ED87 /* faceShape.usdz in Resources */ = {isa = PBXBuildFile; fileRef = CC5144502A34FB4400D5ED87 /* faceShape.usdz */; };
 		CC5144542A34FE0700D5ED87 /* faceShapeTest.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = CC5144532A34FE0700D5ED87 /* faceShapeTest.rcproject */; };
+		CC51445E2A35B26B00D5ED87 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = CC5144562A35B26B00D5ED87 /* 1.png */; };
+		CC51445F2A35B26B00D5ED87 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = CC5144572A35B26B00D5ED87 /* 3.png */; };
+		CC5144602A35B26B00D5ED87 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = CC5144582A35B26B00D5ED87 /* 2.png */; };
+		CC5144612A35B26B00D5ED87 /* 8.png in Resources */ = {isa = PBXBuildFile; fileRef = CC5144592A35B26B00D5ED87 /* 8.png */; };
+		CC5144622A35B26B00D5ED87 /* 5.png in Resources */ = {isa = PBXBuildFile; fileRef = CC51445A2A35B26B00D5ED87 /* 5.png */; };
+		CC5144632A35B26B00D5ED87 /* 6.png in Resources */ = {isa = PBXBuildFile; fileRef = CC51445B2A35B26B00D5ED87 /* 6.png */; };
+		CC5144642A35B26B00D5ED87 /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = CC51445C2A35B26B00D5ED87 /* 4.png */; };
+		CC5144652A35B26B00D5ED87 /* 7.png in Resources */ = {isa = PBXBuildFile; fileRef = CC51445D2A35B26B00D5ED87 /* 7.png */; };
 		CC6E8EB22A28954A0017962E /* ListRecommendatioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6E8EB12A28954A0017962E /* ListRecommendatioView.swift */; };
 		CC6E8EB42A2898D80017962E /* ARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6E8EB32A2898D80017962E /* ARView.swift */; };
 		CC6E8EB62A28DA710017962E /* CustomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6E8EB52A28DA710017962E /* CustomSheetView.swift */; };
@@ -59,8 +66,15 @@
 		CC5144202A33999900D5ED87 /* OvalCurtain.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = OvalCurtain.usdz; sourceTree = "<group>"; };
 		CC5144212A33999900D5ED87 /* OvalShortTexturedMessyFringe.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = OvalShortTexturedMessyFringe.usdz; sourceTree = "<group>"; };
 		CC51444E2A34DEC600D5ED87 /* tubeShape.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = tubeShape.usdz; sourceTree = "<group>"; };
-		CC5144502A34FB4400D5ED87 /* faceShape.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = faceShape.usdz; sourceTree = "<group>"; };
 		CC5144532A34FE0700D5ED87 /* faceShapeTest.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = faceShapeTest.rcproject; sourceTree = "<group>"; };
+		CC5144562A35B26B00D5ED87 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		CC5144572A35B26B00D5ED87 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
+		CC5144582A35B26B00D5ED87 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		CC5144592A35B26B00D5ED87 /* 8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 8.png; sourceTree = "<group>"; };
+		CC51445A2A35B26B00D5ED87 /* 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 5.png; sourceTree = "<group>"; };
+		CC51445B2A35B26B00D5ED87 /* 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 6.png; sourceTree = "<group>"; };
+		CC51445C2A35B26B00D5ED87 /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4.png; sourceTree = "<group>"; };
+		CC51445D2A35B26B00D5ED87 /* 7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 7.png; sourceTree = "<group>"; };
 		CC6E8EB12A28954A0017962E /* ListRecommendatioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRecommendatioView.swift; sourceTree = "<group>"; };
 		CC6E8EB32A2898D80017962E /* ARView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARView.swift; sourceTree = "<group>"; };
 		CC6E8EB52A28DA710017962E /* CustomSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSheetView.swift; sourceTree = "<group>"; };
@@ -101,10 +115,25 @@
 			path = RealityComposer;
 			sourceTree = "<group>";
 		};
+		CC5144552A35B24A00D5ED87 /* FaceShape */ = {
+			isa = PBXGroup;
+			children = (
+				CC5144562A35B26B00D5ED87 /* 1.png */,
+				CC5144582A35B26B00D5ED87 /* 2.png */,
+				CC5144572A35B26B00D5ED87 /* 3.png */,
+				CC51445C2A35B26B00D5ED87 /* 4.png */,
+				CC51445A2A35B26B00D5ED87 /* 5.png */,
+				CC51445B2A35B26B00D5ED87 /* 6.png */,
+				CC51445D2A35B26B00D5ED87 /* 7.png */,
+				CC5144592A35B26B00D5ED87 /* 8.png */,
+			);
+			path = FaceShape;
+			sourceTree = "<group>";
+		};
 		CC6E8EC12A29C24B0017962E /* 3dModel */ = {
 			isa = PBXGroup;
 			children = (
-				CC5144502A34FB4400D5ED87 /* faceShape.usdz */,
+				CC5144552A35B24A00D5ED87 /* FaceShape */,
 				CC51444E2A34DEC600D5ED87 /* tubeShape.usdz */,
 				CC5144162A33999800D5ED87 /* OvalBuzzCut.usdz */,
 				CC5144202A33999900D5ED87 /* OvalCurtain.usdz */,
@@ -259,15 +288,22 @@
 			files = (
 				CCC6798C2A1FDC8300F59CA8 /* Preview Assets.xcassets in Resources */,
 				CC5144222A33999900D5ED87 /* OvalUndercutManBun.usdz in Resources */,
+				CC5144652A35B26B00D5ED87 /* 7.png in Resources */,
+				CC5144602A35B26B00D5ED87 /* 2.png in Resources */,
 				CC5144292A33999900D5ED87 /* OvalShortCrewCut.usdz in Resources */,
 				CCC679892A1FDC8300F59CA8 /* Assets.xcassets in Resources */,
 				CC51444F2A34DEC700D5ED87 /* tubeShape.usdz in Resources */,
+				CC5144612A35B26B00D5ED87 /* 8.png in Resources */,
+				CC51445F2A35B26B00D5ED87 /* 3.png in Resources */,
 				CC51442C2A33999900D5ED87 /* OvalPompadour.usdz in Resources */,
+				CC5144632A35B26B00D5ED87 /* 6.png in Resources */,
 				CC51442D2A33999900D5ED87 /* OvalSidePart.usdz in Resources */,
 				CC51442B2A33999900D5ED87 /* OvalFlatTop.usdz in Resources */,
+				CC5144642A35B26B00D5ED87 /* 4.png in Resources */,
+				CC5144622A35B26B00D5ED87 /* 5.png in Resources */,
 				CC5144262A33999900D5ED87 /* OvalTwobBlock.usdz in Resources */,
+				CC51445E2A35B26B00D5ED87 /* 1.png in Resources */,
 				CC51442F2A33999900D5ED87 /* OvalShortTexturedMessyFringe.usdz in Resources */,
-				CC5144512A34FB4400D5ED87 /* faceShape.usdz in Resources */,
 				CC5144272A33999900D5ED87 /* OvalSpiky.usdz in Resources */,
 				CC5144242A33999900D5ED87 /* OvalBuzzCut.usdz in Resources */,
 				CC51442A2A33999900D5ED87 /* OvalSlickBack.usdz in Resources */,

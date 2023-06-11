@@ -10,6 +10,7 @@ import SwiftUI
 struct ListRecommendatioView: View {
     @StateObject var modalBtnShow = ShowModal()
     @State private var DataHairModel: [HairModel] = HairModels
+    @AppStorage("faceshape") var myFaceShape: String = ""
     @State var isFavoriteEmpty = 0
     @State private var shownSheet = false
     @State private var sheetHairModel: Int = 0
@@ -19,6 +20,7 @@ struct ListRecommendatioView: View {
     ]
     
     var body: some View {
+        
         NavigationView{
             ZStack{
                 VStack(alignment: .leading, spacing: 0.0){
@@ -28,7 +30,7 @@ struct ListRecommendatioView: View {
                             Text("List of Recommendation")
                                 .font(.system(size: 21, weight: .bold))
                                 .foregroundColor(myColor.fourth.rawValue)
-                            Text("Diamond Face Shape")
+                            Text("\(myFaceShape.capitalized) Face Shape")
                                 .font(.system(size: 16, weight: .regular))
                                 .foregroundColor(myColor.fourth.rawValue)
                                 .opacity(0.6)
@@ -67,10 +69,10 @@ struct ListRecommendatioView: View {
                                                     
                                                     VStack(spacing: 0.0) {
                                                         
-//                                                        NavigationLink{
-//                                                            DetailRecommendationView(hairModel: DataHairModel[index])
-//
-//                                                        }label: {
+                                                        //                                                        NavigationLink{
+                                                        //                                                            DetailRecommendationView(hairModel: DataHairModel[index])
+                                                        //
+                                                        //                                                        }label: {
                                                         Button(action: {
                                                             
                                                             modalBtnShow.dataHairModel = DataHairModel[index]
@@ -79,18 +81,18 @@ struct ListRecommendatioView: View {
                                                         }, label: {
                                                             PreviewView(scene: $DataHairModel[index].icon)
                                                                 .frame(width: 125, height: 125)
-                                                              
+                                                            
                                                         })
-                                                           
-//                                                        }
+                                                        
+                                                        //                                                        }
                                                         
                                                         Text("\(model.name)")
                                                             .font(.system(size: 11, weight: .regular))
                                                             .foregroundColor(myColor.fourth.rawValue)
                                                         
                                                     }
-
-                                                
+                                                    
+                                                    
                                                 }
                                                 .onAppear{
                                                     isFavoriteEmpty = DataHairModel.filter { $0.isFavorite }.count
@@ -126,11 +128,11 @@ struct ListRecommendatioView: View {
                                         .foregroundColor(myColor.secondary.rawValue)
                                     
                                     VStack(spacing: 0.0) {
-//                                        NavigationLink{
-//                                            DetailRecommendationView(hairModel: DataHairModel[index])
-//
-//                                        }label: {
-                                         
+                                        //                                        NavigationLink{
+                                        //                                            DetailRecommendationView(hairModel: DataHairModel[index])
+                                        //
+                                        //                                        }label: {
+                                        
                                         Button(action: {
                                             
                                             modalBtnShow.dataHairModel = DataHairModel[index]
@@ -139,11 +141,11 @@ struct ListRecommendatioView: View {
                                         }, label: {
                                             PreviewView(scene: $DataHairModel[index].icon)
                                                 .frame(width: 125, height: 125)
-                                              
+                                            
                                         })
-//                                        
-                                              
-//                                        }
+                                        //
+                                        
+                                        //                                        }
                                         
                                         Text("\(model.name)")
                                             .font(.system(size: 11, weight: .regular))
@@ -188,11 +190,15 @@ struct ListRecommendatioView: View {
                             .frame(maxWidth: .infinity, maxHeight: 73)
                             .foregroundColor(myColor.fourth.rawValue)
                             .opacity(0.8)
-                         
+                        
                         HStack(spacing: 25){
-                            Button(action: {
+                            
+                            NavigationLink{
+                                ARMatchingView()
+                                    .navigationBarBackButtonHidden(true)
+
+                            }label:{
                                 
-                            }, label: {
                                 ZStack{
                                     Circle()
                                         .frame(width: 54, height: 54)
@@ -200,17 +206,19 @@ struct ListRecommendatioView: View {
                                     Circle()
                                         .frame(width: 46, height: 46)
                                         .foregroundColor(myColor.primary.rawValue)
-                                  
+                                    
                                     Image(systemName: "arrow.triangle.2.circlepath.camera.fill")
                                         .foregroundColor(myColor.fourth.rawValue)
                                     
                                 }
                                 
-                            })
-                           
+                                
+                            }
+                            
+                            
                             NavigationLink{
                                 DetailRecommendationView(hairModel: DataHairModel)
-//                                TextArTestView()
+                                //                                TextArTestView()
                             }label:{
                                 ZStack{
                                     Circle()
@@ -224,34 +232,34 @@ struct ListRecommendatioView: View {
                                     
                                 }
                             }
-//                            Button(action: {
-//                                
-//                            }, label: {
-//                                
-//                                
-//                            })
+                            //                            Button(action: {
+                            //
+                            //                            }, label: {
+                            //
+                            //
+                            //                            })
                         }
                         .padding(.bottom, 15)
-                       
+                        
                         
                     }
-    //                .opacity(hover ? 1 : 0)
-    //                .onHover{
-    //                    onHover in
-    //                    hover = onHover
-    //                }
+                    //                .opacity(hover ? 1 : 0)
+                    //                .onHover{
+                    //                    onHover in
+                    //                    hover = onHover
+                    //                }
                     
                     
                 }
                 .edgesIgnoringSafeArea(.bottom)
-               
-
+                
+                
                 BottomSheet(hairModel: DataHairModel[sheetHairModel])
                     .environmentObject(modalBtnShow)
-                   
+                
             }
-           
-                        
+            
+            
         }
         
     }
