@@ -14,6 +14,7 @@ struct ListRecommendatioView: View {
     @State var isFavoriteEmpty = 0
     @State private var shownSheet = false
     @State private var sheetHairModel: Int = 0
+    @State var shownARMatching = false
     let columns = [
         GridItem(.flexible(),spacing:10),
         GridItem(.flexible(),spacing:10),
@@ -216,6 +217,9 @@ struct ListRecommendatioView: View {
                             }
                             
                             
+//                            NavigationLink(
+//                                                  destination: Text("Subsequent View"),
+//                                                  isActive: $shownARMatching)
                             NavigationLink{
                                 DetailRecommendationView(hairModel: DataHairModel)
                                 //                                TextArTestView()
