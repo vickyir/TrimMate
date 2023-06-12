@@ -74,17 +74,6 @@ struct ARMatchingView: View {
                  
                     ARMatchingViewController()
                         .ignoresSafeArea()
-                        .onAppear{
-                            if myFaceShape == ""{
-                                myFaceShape = "diamond"
-                            }else{
-                                myFaceShape =  myFaceShape
-                            }
-                        }
-                    Rectangle()
-                        .frame(width: 200, height: 200)
-                        .foregroundColor(myColor.fourth.rawValue)
-                        .opacity(0.5)
                         .onTapGesture {
                             showHint = false
                             if index == 3{
@@ -104,6 +93,15 @@ struct ARMatchingView: View {
                             }
                             
                         }
+                        .onAppear{
+                            if myFaceShape == ""{
+                                myFaceShape = "diamond"
+                            }else{
+                                myFaceShape =  myFaceShape
+                            }
+                        }
+                  
+        
                     
                     VStack{
                         AnimatedGradientRoundedRectangle(selectedFaceShape: $index)
@@ -140,7 +138,7 @@ struct ARMatchingView: View {
                                 .frame(width: 300, height: 55)
                                 .foregroundColor(myColor.fourth.rawValue)
                                 .opacity(0.38)
-                            Text("Tap the screen to change \nface shape!")
+                            Text("Tap the shape on the screen to \nchange face shape!")
                                 .font(.system(size: 20, weight: .semibold))
                                 .multilineTextAlignment(.center)
                                 .foregroundColor(myColor.primary.rawValue)

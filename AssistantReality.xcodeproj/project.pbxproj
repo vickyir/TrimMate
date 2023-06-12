@@ -32,24 +32,24 @@
 		CCC679892A1FDC8300F59CA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCC679882A1FDC8300F59CA8 /* Assets.xcassets */; };
 		CCC6798C2A1FDC8300F59CA8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCC6798B2A1FDC8300F59CA8 /* Preview Assets.xcassets */; };
 		CCC679932A1FDC9700F59CA8 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC679922A1FDC9700F59CA8 /* SplashScreen.swift */; };
-		CCEF40612A3723A800E5966F /* DiamondBuzzCut.usdz in Resources */ = {isa = PBXBuildFile; fileRef = CCEF405B2A3723A700E5966F /* DiamondBuzzCut.usdz */; };
-		CCEF40622A3723A800E5966F /* DiamondPompadour.usdz in Resources */ = {isa = PBXBuildFile; fileRef = CCEF405C2A3723A800E5966F /* DiamondPompadour.usdz */; };
-		CCEF40632A3723A800E5966F /* DiamondSpiky.usdz in Resources */ = {isa = PBXBuildFile; fileRef = CCEF405D2A3723A800E5966F /* DiamondSpiky.usdz */; };
-		CCEF40642A3723A800E5966F /* DiamondShortCrewCut.usdz in Resources */ = {isa = PBXBuildFile; fileRef = CCEF405E2A3723A800E5966F /* DiamondShortCrewCut.usdz */; };
-		CCEF40652A3723A800E5966F /* DiamondSidePart.usdz in Resources */ = {isa = PBXBuildFile; fileRef = CCEF405F2A3723A800E5966F /* DiamondSidePart.usdz */; };
-		CCEF40662A3723A800E5966F /* DiamondTaperSlickBack.usdz in Resources */ = {isa = PBXBuildFile; fileRef = CCEF40602A3723A800E5966F /* DiamondTaperSlickBack.usdz */; };
-		CCEF406D2A3724DC00E5966F /* RectangleShortCrewCut.usdz in Resources */ = {isa = PBXBuildFile; fileRef = CCEF40672A3724DC00E5966F /* RectangleShortCrewCut.usdz */; };
-		CCEF406E2A3724DC00E5966F /* RectangleTaperSlickback.usdz in Resources */ = {isa = PBXBuildFile; fileRef = CCEF40682A3724DC00E5966F /* RectangleTaperSlickback.usdz */; };
-		CCEF406F2A3724DC00E5966F /* RectangleBuzzCut.usdz in Resources */ = {isa = PBXBuildFile; fileRef = CCEF40692A3724DC00E5966F /* RectangleBuzzCut.usdz */; };
-		CCEF40702A3724DC00E5966F /* RectangleSpiky.usdz in Resources */ = {isa = PBXBuildFile; fileRef = CCEF406A2A3724DC00E5966F /* RectangleSpiky.usdz */; };
-		CCEF40712A3724DC00E5966F /* RectanglePompadour.usdz in Resources */ = {isa = PBXBuildFile; fileRef = CCEF406B2A3724DC00E5966F /* RectanglePompadour.usdz */; };
-		CCEF40722A3724DC00E5966F /* RectangleSidePart.usdz in Resources */ = {isa = PBXBuildFile; fileRef = CCEF406C2A3724DC00E5966F /* RectangleSidePart.usdz */; };
-		CCEF40792A37255F00E5966F /* RoundSpiky.usdz in Resources */ = {isa = PBXBuildFile; fileRef = CCEF40732A37255F00E5966F /* RoundSpiky.usdz */; };
-		CCEF407A2A37255F00E5966F /* RoundBuzzCut.usdz in Resources */ = {isa = PBXBuildFile; fileRef = CCEF40742A37255F00E5966F /* RoundBuzzCut.usdz */; };
-		CCEF407B2A37255F00E5966F /* RoundPompadour.usdz in Resources */ = {isa = PBXBuildFile; fileRef = CCEF40752A37255F00E5966F /* RoundPompadour.usdz */; };
-		CCEF407C2A37255F00E5966F /* RoundTaperSlickback.usdz in Resources */ = {isa = PBXBuildFile; fileRef = CCEF40762A37255F00E5966F /* RoundTaperSlickback.usdz */; };
-		CCEF407D2A37255F00E5966F /* RoundShortCrewCut.usdz in Resources */ = {isa = PBXBuildFile; fileRef = CCEF40772A37255F00E5966F /* RoundShortCrewCut.usdz */; };
-		CCEF407E2A37255F00E5966F /* RoundSidePart.usdz in Resources */ = {isa = PBXBuildFile; fileRef = CCEF40782A37255F00E5966F /* RoundSidePart.usdz */; };
+		CCEF40852A37686B00E5966F /* DiamondBuzzCut.usdz in Resources */ = {isa = PBXBuildFile; fileRef = CCEF407F2A37686A00E5966F /* DiamondBuzzCut.usdz */; };
+		CCEF40862A37686B00E5966F /* DiamondPompadour.usdz in Resources */ = {isa = PBXBuildFile; fileRef = CCEF40802A37686A00E5966F /* DiamondPompadour.usdz */; };
+		CCEF40872A37686B00E5966F /* DiamondShortCrewCut.usdz in Resources */ = {isa = PBXBuildFile; fileRef = CCEF40812A37686A00E5966F /* DiamondShortCrewCut.usdz */; };
+		CCEF40882A37686B00E5966F /* DiamondSidePart.usdz in Resources */ = {isa = PBXBuildFile; fileRef = CCEF40822A37686B00E5966F /* DiamondSidePart.usdz */; };
+		CCEF40892A37686B00E5966F /* DiamondSpiky.usdz in Resources */ = {isa = PBXBuildFile; fileRef = CCEF40832A37686B00E5966F /* DiamondSpiky.usdz */; };
+		CCEF408A2A37686B00E5966F /* DiamondTaperSlickback.usdz in Resources */ = {isa = PBXBuildFile; fileRef = CCEF40842A37686B00E5966F /* DiamondTaperSlickback.usdz */; };
+		CCEF40912A376A1E00E5966F /* RoundShortCrewCut.usdz in Resources */ = {isa = PBXBuildFile; fileRef = CCEF408B2A376A1D00E5966F /* RoundShortCrewCut.usdz */; };
+		CCEF40922A376A1E00E5966F /* RoundBuzzCut.usdz in Resources */ = {isa = PBXBuildFile; fileRef = CCEF408C2A376A1D00E5966F /* RoundBuzzCut.usdz */; };
+		CCEF40932A376A1E00E5966F /* RoundSpiky.usdz in Resources */ = {isa = PBXBuildFile; fileRef = CCEF408D2A376A1D00E5966F /* RoundSpiky.usdz */; };
+		CCEF40942A376A1E00E5966F /* RoundSidePart.usdz in Resources */ = {isa = PBXBuildFile; fileRef = CCEF408E2A376A1D00E5966F /* RoundSidePart.usdz */; };
+		CCEF40952A376A1E00E5966F /* RoundTaperSlickBack.usdz in Resources */ = {isa = PBXBuildFile; fileRef = CCEF408F2A376A1E00E5966F /* RoundTaperSlickBack.usdz */; };
+		CCEF40962A376A1E00E5966F /* RoundPompadour.usdz in Resources */ = {isa = PBXBuildFile; fileRef = CCEF40902A376A1E00E5966F /* RoundPompadour.usdz */; };
+		CCEF40A92A376DC800E5966F /* RectangleShortCrewCut.usdz in Resources */ = {isa = PBXBuildFile; fileRef = CCEF40A32A376DC800E5966F /* RectangleShortCrewCut.usdz */; };
+		CCEF40AA2A376DC800E5966F /* RectanglePompadour.usdz in Resources */ = {isa = PBXBuildFile; fileRef = CCEF40A42A376DC800E5966F /* RectanglePompadour.usdz */; };
+		CCEF40AB2A376DC800E5966F /* RectangleBuzzCut.usdz in Resources */ = {isa = PBXBuildFile; fileRef = CCEF40A52A376DC800E5966F /* RectangleBuzzCut.usdz */; };
+		CCEF40AC2A376DC800E5966F /* RectangleSidePart.usdz in Resources */ = {isa = PBXBuildFile; fileRef = CCEF40A62A376DC800E5966F /* RectangleSidePart.usdz */; };
+		CCEF40AD2A376DC800E5966F /* RectangleTaperSlickback.usdz in Resources */ = {isa = PBXBuildFile; fileRef = CCEF40A72A376DC800E5966F /* RectangleTaperSlickback.usdz */; };
+		CCEF40AE2A376DC800E5966F /* RectangleSpiky.usdz in Resources */ = {isa = PBXBuildFile; fileRef = CCEF40A82A376DC800E5966F /* RectangleSpiky.usdz */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,24 +80,24 @@
 		CCC6798B2A1FDC8300F59CA8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CCC679922A1FDC9700F59CA8 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 		CCC679962A1FEB7700F59CA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		CCEF405B2A3723A700E5966F /* DiamondBuzzCut.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = DiamondBuzzCut.usdz; sourceTree = "<group>"; };
-		CCEF405C2A3723A800E5966F /* DiamondPompadour.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = DiamondPompadour.usdz; sourceTree = "<group>"; };
-		CCEF405D2A3723A800E5966F /* DiamondSpiky.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = DiamondSpiky.usdz; sourceTree = "<group>"; };
-		CCEF405E2A3723A800E5966F /* DiamondShortCrewCut.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = DiamondShortCrewCut.usdz; sourceTree = "<group>"; };
-		CCEF405F2A3723A800E5966F /* DiamondSidePart.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = DiamondSidePart.usdz; sourceTree = "<group>"; };
-		CCEF40602A3723A800E5966F /* DiamondTaperSlickBack.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = DiamondTaperSlickBack.usdz; sourceTree = "<group>"; };
-		CCEF40672A3724DC00E5966F /* RectangleShortCrewCut.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = RectangleShortCrewCut.usdz; sourceTree = "<group>"; };
-		CCEF40682A3724DC00E5966F /* RectangleTaperSlickback.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = RectangleTaperSlickback.usdz; sourceTree = "<group>"; };
-		CCEF40692A3724DC00E5966F /* RectangleBuzzCut.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = RectangleBuzzCut.usdz; sourceTree = "<group>"; };
-		CCEF406A2A3724DC00E5966F /* RectangleSpiky.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = RectangleSpiky.usdz; sourceTree = "<group>"; };
-		CCEF406B2A3724DC00E5966F /* RectanglePompadour.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = RectanglePompadour.usdz; sourceTree = "<group>"; };
-		CCEF406C2A3724DC00E5966F /* RectangleSidePart.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = RectangleSidePart.usdz; sourceTree = "<group>"; };
-		CCEF40732A37255F00E5966F /* RoundSpiky.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = RoundSpiky.usdz; sourceTree = "<group>"; };
-		CCEF40742A37255F00E5966F /* RoundBuzzCut.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = RoundBuzzCut.usdz; sourceTree = "<group>"; };
-		CCEF40752A37255F00E5966F /* RoundPompadour.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = RoundPompadour.usdz; sourceTree = "<group>"; };
-		CCEF40762A37255F00E5966F /* RoundTaperSlickback.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = RoundTaperSlickback.usdz; sourceTree = "<group>"; };
-		CCEF40772A37255F00E5966F /* RoundShortCrewCut.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = RoundShortCrewCut.usdz; sourceTree = "<group>"; };
-		CCEF40782A37255F00E5966F /* RoundSidePart.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = RoundSidePart.usdz; sourceTree = "<group>"; };
+		CCEF407F2A37686A00E5966F /* DiamondBuzzCut.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = DiamondBuzzCut.usdz; sourceTree = "<group>"; };
+		CCEF40802A37686A00E5966F /* DiamondPompadour.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = DiamondPompadour.usdz; sourceTree = "<group>"; };
+		CCEF40812A37686A00E5966F /* DiamondShortCrewCut.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = DiamondShortCrewCut.usdz; sourceTree = "<group>"; };
+		CCEF40822A37686B00E5966F /* DiamondSidePart.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = DiamondSidePart.usdz; sourceTree = "<group>"; };
+		CCEF40832A37686B00E5966F /* DiamondSpiky.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = DiamondSpiky.usdz; sourceTree = "<group>"; };
+		CCEF40842A37686B00E5966F /* DiamondTaperSlickback.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = DiamondTaperSlickback.usdz; sourceTree = "<group>"; };
+		CCEF408B2A376A1D00E5966F /* RoundShortCrewCut.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = RoundShortCrewCut.usdz; sourceTree = "<group>"; };
+		CCEF408C2A376A1D00E5966F /* RoundBuzzCut.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = RoundBuzzCut.usdz; sourceTree = "<group>"; };
+		CCEF408D2A376A1D00E5966F /* RoundSpiky.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = RoundSpiky.usdz; sourceTree = "<group>"; };
+		CCEF408E2A376A1D00E5966F /* RoundSidePart.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = RoundSidePart.usdz; sourceTree = "<group>"; };
+		CCEF408F2A376A1E00E5966F /* RoundTaperSlickBack.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = RoundTaperSlickBack.usdz; sourceTree = "<group>"; };
+		CCEF40902A376A1E00E5966F /* RoundPompadour.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = RoundPompadour.usdz; sourceTree = "<group>"; };
+		CCEF40A32A376DC800E5966F /* RectangleShortCrewCut.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = RectangleShortCrewCut.usdz; sourceTree = "<group>"; };
+		CCEF40A42A376DC800E5966F /* RectanglePompadour.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = RectanglePompadour.usdz; sourceTree = "<group>"; };
+		CCEF40A52A376DC800E5966F /* RectangleBuzzCut.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = RectangleBuzzCut.usdz; sourceTree = "<group>"; };
+		CCEF40A62A376DC800E5966F /* RectangleSidePart.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = RectangleSidePart.usdz; sourceTree = "<group>"; };
+		CCEF40A72A376DC800E5966F /* RectangleTaperSlickback.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = RectangleTaperSlickback.usdz; sourceTree = "<group>"; };
+		CCEF40A82A376DC800E5966F /* RectangleSpiky.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = RectangleSpiky.usdz; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,24 +122,24 @@
 		CC6E8EC12A29C24B0017962E /* 3dModel */ = {
 			isa = PBXGroup;
 			children = (
-				CCEF40742A37255F00E5966F /* RoundBuzzCut.usdz */,
-				CCEF40752A37255F00E5966F /* RoundPompadour.usdz */,
-				CCEF40772A37255F00E5966F /* RoundShortCrewCut.usdz */,
-				CCEF40782A37255F00E5966F /* RoundSidePart.usdz */,
-				CCEF40732A37255F00E5966F /* RoundSpiky.usdz */,
-				CCEF40762A37255F00E5966F /* RoundTaperSlickback.usdz */,
-				CCEF40692A3724DC00E5966F /* RectangleBuzzCut.usdz */,
-				CCEF406B2A3724DC00E5966F /* RectanglePompadour.usdz */,
-				CCEF40672A3724DC00E5966F /* RectangleShortCrewCut.usdz */,
-				CCEF406C2A3724DC00E5966F /* RectangleSidePart.usdz */,
-				CCEF406A2A3724DC00E5966F /* RectangleSpiky.usdz */,
-				CCEF40682A3724DC00E5966F /* RectangleTaperSlickback.usdz */,
-				CCEF405B2A3723A700E5966F /* DiamondBuzzCut.usdz */,
-				CCEF405C2A3723A800E5966F /* DiamondPompadour.usdz */,
-				CCEF405E2A3723A800E5966F /* DiamondShortCrewCut.usdz */,
-				CCEF405F2A3723A800E5966F /* DiamondSidePart.usdz */,
-				CCEF405D2A3723A800E5966F /* DiamondSpiky.usdz */,
-				CCEF40602A3723A800E5966F /* DiamondTaperSlickBack.usdz */,
+				CCEF40A52A376DC800E5966F /* RectangleBuzzCut.usdz */,
+				CCEF40A42A376DC800E5966F /* RectanglePompadour.usdz */,
+				CCEF40A32A376DC800E5966F /* RectangleShortCrewCut.usdz */,
+				CCEF40A62A376DC800E5966F /* RectangleSidePart.usdz */,
+				CCEF40A82A376DC800E5966F /* RectangleSpiky.usdz */,
+				CCEF40A72A376DC800E5966F /* RectangleTaperSlickback.usdz */,
+				CCEF408C2A376A1D00E5966F /* RoundBuzzCut.usdz */,
+				CCEF40902A376A1E00E5966F /* RoundPompadour.usdz */,
+				CCEF408B2A376A1D00E5966F /* RoundShortCrewCut.usdz */,
+				CCEF408E2A376A1D00E5966F /* RoundSidePart.usdz */,
+				CCEF408D2A376A1D00E5966F /* RoundSpiky.usdz */,
+				CCEF408F2A376A1E00E5966F /* RoundTaperSlickBack.usdz */,
+				CCEF407F2A37686A00E5966F /* DiamondBuzzCut.usdz */,
+				CCEF40802A37686A00E5966F /* DiamondPompadour.usdz */,
+				CCEF40812A37686A00E5966F /* DiamondShortCrewCut.usdz */,
+				CCEF40822A37686B00E5966F /* DiamondSidePart.usdz */,
+				CCEF40832A37686B00E5966F /* DiamondSpiky.usdz */,
+				CCEF40842A37686B00E5966F /* DiamondTaperSlickback.usdz */,
 				CC51444E2A34DEC600D5ED87 /* tubeShape.usdz */,
 				CC5144162A33999800D5ED87 /* OvalBuzzCut.usdz */,
 				CC51441E2A33999900D5ED87 /* OvalPompadour.usdz */,
@@ -284,32 +284,32 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CCEF40722A3724DC00E5966F /* RectangleSidePart.usdz in Resources */,
-				CCEF406D2A3724DC00E5966F /* RectangleShortCrewCut.usdz in Resources */,
-				CCEF40622A3723A800E5966F /* DiamondPompadour.usdz in Resources */,
-				CCEF407D2A37255F00E5966F /* RoundShortCrewCut.usdz in Resources */,
 				CCC6798C2A1FDC8300F59CA8 /* Preview Assets.xcassets in Resources */,
-				CCEF407C2A37255F00E5966F /* RoundTaperSlickback.usdz in Resources */,
-				CCEF40712A3724DC00E5966F /* RectanglePompadour.usdz in Resources */,
-				CCEF40652A3723A800E5966F /* DiamondSidePart.usdz in Resources */,
+				CCEF408A2A37686B00E5966F /* DiamondTaperSlickback.usdz in Resources */,
+				CCEF40872A37686B00E5966F /* DiamondShortCrewCut.usdz in Resources */,
 				CC5144292A33999900D5ED87 /* OvalShortCrewCut.usdz in Resources */,
+				CCEF40912A376A1E00E5966F /* RoundShortCrewCut.usdz in Resources */,
 				CCC679892A1FDC8300F59CA8 /* Assets.xcassets in Resources */,
+				CCEF40A92A376DC800E5966F /* RectangleShortCrewCut.usdz in Resources */,
 				CC51444F2A34DEC700D5ED87 /* tubeShape.usdz in Resources */,
-				CCEF40702A3724DC00E5966F /* RectangleSpiky.usdz in Resources */,
+				CCEF40932A376A1E00E5966F /* RoundSpiky.usdz in Resources */,
+				CCEF40AC2A376DC800E5966F /* RectangleSidePart.usdz in Resources */,
+				CCEF40AA2A376DC800E5966F /* RectanglePompadour.usdz in Resources */,
 				CC51442C2A33999900D5ED87 /* OvalPompadour.usdz in Resources */,
-				CCEF407E2A37255F00E5966F /* RoundSidePart.usdz in Resources */,
+				CCEF40AE2A376DC800E5966F /* RectangleSpiky.usdz in Resources */,
+				CCEF40922A376A1E00E5966F /* RoundBuzzCut.usdz in Resources */,
+				CCEF40862A37686B00E5966F /* DiamondPompadour.usdz in Resources */,
+				CCEF40AB2A376DC800E5966F /* RectangleBuzzCut.usdz in Resources */,
+				CCEF40892A37686B00E5966F /* DiamondSpiky.usdz in Resources */,
+				CCEF40882A37686B00E5966F /* DiamondSidePart.usdz in Resources */,
 				CC51442D2A33999900D5ED87 /* OvalSidePart.usdz in Resources */,
-				CCEF407A2A37255F00E5966F /* RoundBuzzCut.usdz in Resources */,
 				CC5144272A33999900D5ED87 /* OvalSpiky.usdz in Resources */,
-				CCEF40792A37255F00E5966F /* RoundSpiky.usdz in Resources */,
-				CCEF40642A3723A800E5966F /* DiamondShortCrewCut.usdz in Resources */,
+				CCEF40942A376A1E00E5966F /* RoundSidePart.usdz in Resources */,
 				CC5144242A33999900D5ED87 /* OvalBuzzCut.usdz in Resources */,
-				CCEF406E2A3724DC00E5966F /* RectangleTaperSlickback.usdz in Resources */,
-				CCEF406F2A3724DC00E5966F /* RectangleBuzzCut.usdz in Resources */,
-				CCEF40632A3723A800E5966F /* DiamondSpiky.usdz in Resources */,
-				CCEF40612A3723A800E5966F /* DiamondBuzzCut.usdz in Resources */,
-				CCEF40662A3723A800E5966F /* DiamondTaperSlickBack.usdz in Resources */,
-				CCEF407B2A37255F00E5966F /* RoundPompadour.usdz in Resources */,
+				CCEF40952A376A1E00E5966F /* RoundTaperSlickBack.usdz in Resources */,
+				CCEF40852A37686B00E5966F /* DiamondBuzzCut.usdz in Resources */,
+				CCEF40962A376A1E00E5966F /* RoundPompadour.usdz in Resources */,
+				CCEF40AD2A376DC800E5966F /* RectangleTaperSlickback.usdz in Resources */,
 				CC5144252A33999900D5ED87 /* OvalTaperSlickback.usdz in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

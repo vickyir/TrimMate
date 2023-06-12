@@ -35,14 +35,9 @@ struct ARViewController: UIViewRepresentable {
     }
     
     func updateUIView(_ uiView: ARView, context: Context) {
-        //        if showModel {
-        //
-        //
-        //
-        //        } else {
-        //            uiView.scene.anchors.removeAll()
-        //        }
+        
     }
+    
     
     
     func makeCoordinator() -> Coordinator {
@@ -52,7 +47,7 @@ struct ARViewController: UIViewRepresentable {
     class Coordinator: NSObject, ARCoachingOverlayViewDelegate {
         
         let model3D: [HairModel] // Add the model3D property
-        
+        var increment: Int = 0
         init(model3D: [HairModel]) {
             self.model3D = model3D
         }
@@ -63,16 +58,17 @@ struct ARViewController: UIViewRepresentable {
             for i in 0..<self.model3D.count {
                 let detailData = model3D[i]
                 if detailData.faceType == myFaceShape{
+                    
                     if let usdzFile = Bundle.main.url(forResource: "\(detailData.iconName)", withExtension: "usdz") {
                         let anchor = try! Entity.load(contentsOf: usdzFile)
                         let anchorEntity = AnchorEntity()
                         let textEntity = AnchorEntity()
                    
                         // Calculate the position of the anchor entity in a zigzag pattern
-                        let column = i % 3 // Number of columns
-                        let row = i / 3 // Number of rows
+                        let column = increment % 3 // Number of columns
+                        let row = increment / 3 // Number of rows
                         let spacing: Float = 1.0 // Adjust the spacing between objects
-                        
+                        increment += 1
                         let position = SIMD3<Float>(x: Float(column) * spacing, y: 0, z: -Float(row)-1 * spacing)
                         anchorEntity.transform.matrix = matrix_identity_float4x4
                         anchorEntity.transform.translation = position
