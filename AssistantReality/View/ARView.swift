@@ -58,50 +58,54 @@ struct ARViewController: UIViewRepresentable {
         }
         
         func coachingOverlayViewDidDeactivate(_ coachingOverlayView: ARCoachingOverlayView) {
+            @AppStorage("faceshape") var myFaceShape: String = ""
             guard let arView = coachingOverlayView.superview as? ARView else { return }
             for i in 0..<self.model3D.count {
                 let detailData = model3D[i]
-                if let usdzFile = Bundle.main.url(forResource: "\(detailData.iconName)", withExtension: "usdz") {
-                    let anchor = try! Entity.load(contentsOf: usdzFile)
-                    let anchorEntity = AnchorEntity()
-                    let textEntity = AnchorEntity()
-               
-                    // Calculate the position of the anchor entity in a zigzag pattern
-                    let column = i % 3 // Number of columns
-                    let row = i / 3 // Number of rows
-                    let spacing: Float = 1.0 // Adjust the spacing between objects
-                    
-                    let position = SIMD3<Float>(x: Float(column) * spacing, y: 0, z: -Float(row)-1 * spacing)
-                    anchorEntity.transform.matrix = matrix_identity_float4x4
-                    anchorEntity.transform.translation = position
-                    
-                    let textPosition = SIMD3<Float>(x: position.x, y: position.y + 0.3, z: position.z)
-                    textEntity.transform.matrix = matrix_identity_float4x4
-                    textEntity.transform.translation = textPosition
-                    
-                    
-                    if let usdzTubeShape = Bundle.main.url(forResource: "tubeShape", withExtension: "usdz"){
-                        let tubeAnchor = try! Entity.load(contentsOf: usdzTubeShape)
-                        let tubeShape = AnchorEntity()
+                if detailData.faceType == myFaceShape{
+                    if let usdzFile = Bundle.main.url(forResource: "\(detailData.iconName)", withExtension: "usdz") {
+                        let anchor = try! Entity.load(contentsOf: usdzFile)
+                        let anchorEntity = AnchorEntity()
+                        let textEntity = AnchorEntity()
+                   
+                        // Calculate the position of the anchor entity in a zigzag pattern
+                        let column = i % 3 // Number of columns
+                        let row = i / 3 // Number of rows
+                        let spacing: Float = 1.0 // Adjust the spacing between objects
                         
-                        let tubeShapePosition = SIMD3<Float>(x: position.x, y: position.y + -0.5, z: position.z-0.1)
-                        tubeShape.transform.matrix = matrix_identity_float4x4
-                        tubeShape.transform.translation = tubeShapePosition
-                        tubeShape.addChild(tubeAnchor)
-                        arView.scene.addAnchor(tubeShape)
+                        let position = SIMD3<Float>(x: Float(column) * spacing, y: 0, z: -Float(row)-1 * spacing)
+                        anchorEntity.transform.matrix = matrix_identity_float4x4
+                        anchorEntity.transform.translation = position
+                        
+                        let textPosition = SIMD3<Float>(x: position.x, y: position.y + 0.3, z: position.z)
+                        textEntity.transform.matrix = matrix_identity_float4x4
+                        textEntity.transform.translation = textPosition
+                        
+                        
+                        if let usdzTubeShape = Bundle.main.url(forResource: "tubeShape", withExtension: "usdz"){
+                            let tubeAnchor = try! Entity.load(contentsOf: usdzTubeShape)
+                            let tubeShape = AnchorEntity()
+                            
+                            let tubeShapePosition = SIMD3<Float>(x: position.x, y: position.y + -0.5, z: position.z-0.1)
+                            tubeShape.transform.matrix = matrix_identity_float4x4
+                            tubeShape.transform.translation = tubeShapePosition
+                            tubeShape.addChild(tubeAnchor)
+                            arView.scene.addAnchor(tubeShape)
+                        }
+                        
+                      
+                        
+                        textEntity.addChild(textGen(textString: "\(detailData.name)"))
+                        anchorEntity.addChild(anchor)
+                       
+                    
+                        
+                        arView.scene.addAnchor(anchorEntity)
+                        arView.scene.addAnchor(textEntity)
+                       
                     }
-                    
-                  
-                    
-                    textEntity.addChild(textGen(textString: "\(detailData.name)"))
-                    anchorEntity.addChild(anchor)
-                   
-                
-                    
-                    arView.scene.addAnchor(anchorEntity)
-                    arView.scene.addAnchor(textEntity)
-                   
                 }
+                
             }
         }
         

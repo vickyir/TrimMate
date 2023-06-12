@@ -1,3 +1,5 @@
+
+
 //
 //  ARMatching.swift
 //  AssistantReality
@@ -10,7 +12,6 @@ import ARKit
 import RealityKit
 
 struct ARMatchingViewController: UIViewControllerRepresentable {
-    
     func makeUIViewController(context: Context) -> ARViewControllerWrapper {
         let viewController = ARViewControllerWrapper()
         viewController.arView.session = ARSession()
@@ -18,11 +19,14 @@ struct ARMatchingViewController: UIViewControllerRepresentable {
     }
     
     func updateUIViewController(_ uiViewController: ARViewControllerWrapper, context: Context) {}
+    
+    static func dismantleUIViewController(_ uiViewController: ARViewControllerWrapper, coordinator: ()) {
+        uiViewController.arView.session.pause()
+    }
 }
 
 class ARViewControllerWrapper: UIViewController, ARSessionDelegate {
     let arView = ARView(frame: .zero)
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,9 +36,6 @@ class ARViewControllerWrapper: UIViewController, ARSessionDelegate {
         arView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         
         let faceShape = try! FaceShapeTest.loadScene()
-        
-        
-        
         let configuration = ARFaceTrackingConfiguration()
         configuration.isLightEstimationEnabled = true
         arView.session.run(configuration)
@@ -47,70 +48,112 @@ class ARViewControllerWrapper: UIViewController, ARSessionDelegate {
     
     func session(_ session: ARSession, didUpdate frame: ARFrame) {
         // Access the front camera frame
-        let _ = frame.camera
+        let camera = frame.camera
         // Use the camera data as needed
+    }
+    
+    deinit {
+        print("ARViewControllerWrapper deallocated")
     }
 }
 
 
 struct ARMatchingView: View {
+    @EnvironmentObject var router: Router
+    
     @AppStorage("faceshape") var myFaceShape: String = ""
     @StateObject private var arSettings = ARSettings()
     @State var index : Int = 0
-    
+    @State private var showHint: Bool = true
     var body: some View {
-        NavigationView{
-            ZStack{
-                ARMatchingViewController()
-                    .ignoresSafeArea()
-                    .onTapGesture {
-                        if index == 3{
-                            index = 0
-                        }else{
-                            index += 1
+        return Group{
+//            if showListRecommend{
+//                ListRecommendatioView()
+//            }else{
+                ZStack{
+                 
+                    ARMatchingViewController()
+                        .ignoresSafeArea()
+                        .onAppear{
+                            if myFaceShape == ""{
+                                myFaceShape = "diamond"
+                            }else{
+                                myFaceShape =  myFaceShape
+                            }
                         }
-                        
-                        if index == 0{
-                            myFaceShape = "diamond"
-                        }else if index == 1{
-                            myFaceShape = "rounded"
-                        }else if index == 2{
-                            myFaceShape = "oval"
-                        }else{
-                            myFaceShape = "circle"
-                        }
-                        
-                    }
-                
-                VStack{
-                    AnimatedGradientRoundedRectangle(selectedFaceShape: $index)
-                        
-                    NavigationLink{
-                        ListRecommendatioView()
-                            .navigationBarBackButtonHidden(true)
-                    }label: {
-                      
-                        ZStack{
-                            RoundedRectangle(cornerRadius: 10)
-                                .frame(width: .infinity, height: 47)
-                                .foregroundColor(myColor.fourth.rawValue)
-                            Text("Select")
-                                .font(.system(size: 14, weight: .semibold))
-                                .foregroundColor(myColor.primary.rawValue)
-                                .tracking(0.54)
+                    Rectangle()
+                        .frame(width: 200, height: 200)
+                        .foregroundColor(myColor.fourth.rawValue)
+                        .opacity(0.5)
+                        .onTapGesture {
+                            showHint = false
+                            if index == 3{
+                                index = 0
+                            }else{
+                                index += 1
+                            }
+                            
+                            if index == 0{
+                                myFaceShape = "diamond"
+                            }else if index == 1{
+                                myFaceShape = "round"
+                            }else if index == 2{
+                                myFaceShape = "rectangle"
+                            }else{
+                                myFaceShape = "oval"
+                            }
                             
                         }
+                    
+                    VStack{
+                        AnimatedGradientRoundedRectangle(selectedFaceShape: $index)
+                        
+                            
+                        Button(action: {
+                            router.path.removeLast(router.path.count)
+                       
+                            
+                        }, label: {
+                            ZStack{
+                                RoundedRectangle(cornerRadius: 10)
+                                    .frame(maxWidth: .infinity, maxHeight: 47)
+                                    .foregroundColor(myColor.fourth.rawValue)
+                                Text("Select")
+                                    .font(.system(size: 14, weight: .semibold))
+                                    .foregroundColor(myColor.primary.rawValue)
+                                    .tracking(0.54)
 
-                        //                    })
+                            }
+                        })
+                            
+                            
+                        
+                        
                     }
-                   
+                    .padding(50)
+                    
                 }
-                .padding(50)
-              
-            }
-            
+                .overlay(alignment: .top){
+                    if showHint{
+                        ZStack{
+                            RoundedRectangle(cornerRadius: 12)
+                                .frame(width: 300, height: 55)
+                                .foregroundColor(myColor.fourth.rawValue)
+                                .opacity(0.38)
+                            Text("Tap the screen to change \nface shape!")
+                                .font(.system(size: 20, weight: .semibold))
+                                .multilineTextAlignment(.center)
+                                .foregroundColor(myColor.primary.rawValue)
+                        }
+                    }
+                    
+                
+                }
+//            }
         }
+
             
+        
         
         
         
@@ -130,9 +173,7 @@ struct AnimatedGradientRoundedRectangle: View {
                 HStack{
                     ForEach(0..<4){
                         index in
-                        //                        Button(action: {
-                        //                            self.selectedFaceShape = index
-                        //                        }, label: {
+                   
                         ZStack{
                             RoundedRectangle(cornerRadius: 10)
                                 .frame(width: 73, height: 73)
@@ -143,9 +184,8 @@ struct AnimatedGradientRoundedRectangle: View {
                                 )
                             Image("\(index+1)")
                                 .resizable()
-                                .frame(maxWidth: 80, maxHeight: 80)
+                                .frame(maxWidth: 40, maxHeight: 40)
                         }
-                        //                        })
                         
                     }
                     
@@ -164,7 +204,6 @@ struct AnimatedGradientRoundedRectangle: View {
         
     }
 }
-
 
 
 class ARSettings: ObservableObject {
@@ -189,4 +228,3 @@ struct ARMatching_Previews: PreviewProvider {
         ARMatchingView()
     }
 }
-

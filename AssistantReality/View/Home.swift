@@ -8,49 +8,87 @@
 import SwiftUI
 
 
+class Router: ObservableObject {
+    @Published var path: NavigationPath = NavigationPath()
+}
 
+enum Destination: Hashable {
+    case arPage
+}
+
+class ViewFactory {
+    @ViewBuilder
+    static func viewForDestination(_ destination: Destination) -> some View {
+        switch destination {
+        case .arPage:
+            ARMatchingView()
+        }
+    }
+}
 
 struct Home: View {
     @State private var activeIntro: PageIntro =  pageIntros[0]
     @AppStorage("faceshape") var myFaceShape: String = ""
+    @State var isOnboardingComplete: Bool = false
+    
     var body: some View {
         
-        return Group{
+        Group {
+            
             if myFaceShape != "" {
+                //withAnimation{
                 ListRecommendatioView()
+                //}
+                
             }else{
-                GeometryReader{
-                    let size = $0.size
-                    IntroView(intro: $activeIntro, size: size){
-                        NavigationLink{
-        //                    ListRecommendatioView()
-        //                        .navigationBarBackButtonHidden(true)
-                            ARMatchingView()
-                                .navigationBarBackButtonHidden(true)
-                        }label: {
-                            VStack(spacing: 0.0){
-                                Text("START")
-                                    .fontWeight(.semibold)
-                                    .font(.system(size: 14))
-                                    .foregroundColor(myColor.primary.rawValue)
-                                    .frame(width: size.width*0.2)
-                                    .padding(.vertical, 10)
-                                    .background{
-                                        Capsule()
-                                            .fill(myColor.fourth.rawValue)
-                                    }
-                                    .padding(.top)
-                            }
-                            .frame(maxWidth: .infinity, alignment: .leading)
-
+                
+                if isOnboardingComplete{
+                    ListRecommendatioView()
+                }else{
+                    GeometryReader{
+                        
+                        let size = $0.size
+                        
+                        IntroView(intro: $activeIntro, size: size){
+                            Button(action: {
+                                isOnboardingComplete.toggle()
+                            }, label: {
+                                VStack(spacing: 0.0){
+                                    Text("START")
+                                        .fontWeight(.semibold)
+                                        .font(.system(size: 14))
+                                        .foregroundColor(myColor.primary.rawValue)
+                                        .frame(width: size.width*0.9)
+                                        .padding(.vertical, 10)
+                                        .background{
+                                            Capsule()
+                                                .fill(myColor.fourth.rawValue)
+                                        }
+                                        .padding(.top)
+                                }
+                                .frame(maxWidth: .infinity, alignment: .leading)
+                            })
                         }
                     }
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+                    .background(myColor.primary.rawValue)
+                    
                 }
-                .frame(maxWidth: .infinity, maxHeight: .infinity)
-                .background(myColor.primary.rawValue)
-
             }
+            
+            
+            /*
+             
+             if myFaceShape != "" {
+             ListRecommendatioView()
+             }else{
+             
+             
+             }
+             */
         }
+        
+        
     }
 }
 
@@ -77,7 +115,7 @@ struct IntroView<ActionView: View>: View{
     @State private var showView: Bool = false
     @State private var hiddenWholeView: Bool = false
     var body: some View{
-        NavigationView{
+        NavigationStack{
             VStack{
                 GeometryReader{
                     let size = $0.size
@@ -90,8 +128,9 @@ struct IntroView<ActionView: View>: View{
                             .position(x:size.width/2, y: size.height/2.8)
                         Image(intro.subIntroAssetImage)
                             .resizable()
-                            .aspectRatio(contentMode: (pageIntros.firstIndex(of: intro)) == 0 ? .fit : .fill )
-                            .frame(width: size.width, height: size.height)
+//                            .scaledToFill()
+                            .aspectRatio(contentMode: (pageIntros.firstIndex(of: intro)) == 0 ? .fit : .fit )
+//                            .frame(width: size.width, height: size.height)
                         
                     }
                     
@@ -141,7 +180,7 @@ struct IntroView<ActionView: View>: View{
                                     .fontWeight(.semibold)
                                     .font(.system(size: 14))
                                     .foregroundColor(myColor.primary.rawValue)
-                                    .frame(width: size.width*0.2)
+                                    .frame(width: size.width*0.9)
                                     .padding(.vertical, 10)
                                     .background{
                                         Capsule()

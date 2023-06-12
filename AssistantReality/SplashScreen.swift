@@ -15,6 +15,9 @@ struct SplashScreen: View {
             Image("or-2")
                 .position(x: geo.size.width, y: geo.size.height/5)
             Image("logo")
+                .resizable()
+                .scaledToFit()
+                .frame(width: 138, height: 138)
                 .position(x: geo.size.width/2, y: geo.size.height/2)
             
         }
