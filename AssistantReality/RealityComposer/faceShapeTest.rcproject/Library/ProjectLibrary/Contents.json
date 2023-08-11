@@ -8,5 +8,40 @@
     "libraryIdentifier" : "55a73f0691cfc44443dc436d86fb7840",
     "format" : "image",
     "displayName" : "1.png"
+  },
+  {
+    "libraryIdentifier" : "b5e95a9f54ee7f73aa144b13c3986b66",
+    "format" : "image",
+    "displayName" : "2.png"
+  },
+  {
+    "libraryIdentifier" : "835d438a1cf857fed4f05695a58a6ac9",
+    "format" : "image",
+    "displayName" : "3.png"
+  },
+  {
+    "libraryIdentifier" : "6e15c458d36ccae7b3ae3dd7ebc6b547",
+    "format" : "image",
+    "displayName" : "4.png"
+  },
+  {
+    "libraryIdentifier" : "d6421516e046b2207283e3beecb24ccf",
+    "format" : "image",
+    "displayName" : "Diamond.png"
+  },
+  {
+    "libraryIdentifier" : "9d219ee0359f42b6256073db806400b0",
+    "format" : "image",
+    "displayName" : "Circle.png"
+  },
+  {
+    "libraryIdentifier" : "5f543723ec918678f3172dc3d0158e04",
+    "format" : "image",
+    "displayName" : "Rectangle.png"
+  },
+  {
+    "libraryIdentifier" : "bb1826b44b73cfff896f5590dd990a19",
+    "format" : "image",
+    "displayName" : "Oval.png"
   }
 ]

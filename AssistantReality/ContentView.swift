@@ -11,8 +11,11 @@ import ARKit
 
 struct ContentView: View {
     var body: some View {
-        Home()
-            .preferredColorScheme(.light)
+     
+            Home()
+                .preferredColorScheme(.light)
+        
+        
     }
 }
 

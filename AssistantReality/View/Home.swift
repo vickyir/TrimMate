@@ -8,40 +8,87 @@
 import SwiftUI
 
 
+class Router: ObservableObject {
+    @Published var path: NavigationPath = NavigationPath()
+}
 
+enum Destination: Hashable {
+    case arPage
+}
+
+class ViewFactory {
+    @ViewBuilder
+    static func viewForDestination(_ destination: Destination) -> some View {
+        switch destination {
+        case .arPage:
+            ARMatchingView()
+        }
+    }
+}
 
 struct Home: View {
     @State private var activeIntro: PageIntro =  pageIntros[0]
+    @AppStorage("faceshape") var myFaceShape: String = ""
+    @State var isOnboardingComplete: Bool = false
+    
     var body: some View {
-        GeometryReader{
-            let size = $0.size
-            IntroView(intro: $activeIntro, size: size){
-                NavigationLink{
-//                    ListRecommendatioView()
-//                        .navigationBarBackButtonHidden(true)
-                    ARMatchingView()
-                        .navigationBarBackButtonHidden(true)
-                }label: {
-                    VStack(spacing: 0.0){
-                        Text("START")
-                            .fontWeight(.semibold)
-                            .font(.system(size: 14))
-                            .foregroundColor(myColor.primary.rawValue)
-                            .frame(width: size.width*0.2)
-                            .padding(.vertical, 10)
-                            .background{
-                                Capsule()
-                                    .fill(myColor.fourth.rawValue)
-                            }
-                            .padding(.top)
+        
+        Group {
+            
+            if myFaceShape != "" {
+                //withAnimation{
+                ListRecommendatioView()
+                //}
+                
+            }else{
+                
+                if isOnboardingComplete{
+                    ListRecommendatioView()
+                }else{
+                    GeometryReader{
+                        
+                        let size = $0.size
+                        
+                        IntroView(intro: $activeIntro, size: size){
+                            Button(action: {
+                                isOnboardingComplete.toggle()
+                            }, label: {
+                                VStack(spacing: 0.0){
+                                    Text("START")
+                                        .fontWeight(.semibold)
+                                        .font(.system(size: 14))
+                                        .foregroundColor(myColor.primary.valueRaw)
+                                        .frame(width: size.width*0.9)
+                                        .padding(.vertical, 10)
+                                        .background{
+                                            Capsule()
+                                                .fill(myColor.fourth.valueRaw)
+                                        }
+                                        .padding(.top)
+                                }
+                                .frame(maxWidth: .infinity, alignment: .leading)
+                            })
+                        }
                     }
-                    .frame(maxWidth: .infinity, alignment: .leading)
-
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+                    .background(myColor.primary.valueRaw)
+                    
                 }
             }
+            
+            
+            /*
+             
+             if myFaceShape != "" {
+             ListRecommendatioView()
+             }else{
+             
+             
+             }
+             */
         }
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(myColor.primary.rawValue)
+        
+        
     }
 }
 
@@ -68,7 +115,7 @@ struct IntroView<ActionView: View>: View{
     @State private var showView: Bool = false
     @State private var hiddenWholeView: Bool = false
     var body: some View{
-        NavigationView{
+        NavigationStack{
             VStack{
                 GeometryReader{
                     let size = $0.size
@@ -81,8 +128,9 @@ struct IntroView<ActionView: View>: View{
                             .position(x:size.width/2, y: size.height/2.8)
                         Image(intro.subIntroAssetImage)
                             .resizable()
-                            .aspectRatio(contentMode: (pageIntros.firstIndex(of: intro)) == 0 ? .fit : .fill )
-                            .frame(width: size.width, height: size.height)
+//                            .scaledToFill()
+                            .aspectRatio(contentMode: (pageIntros.firstIndex(of: intro)) == 0 ? .fit : .fit )
+//                            .frame(width: size.width, height: size.height)
                         
                     }
                     
@@ -131,12 +179,12 @@ struct IntroView<ActionView: View>: View{
                                 Text("NEXT")
                                     .fontWeight(.semibold)
                                     .font(.system(size: 14))
-                                    .foregroundColor(myColor.primary.rawValue)
-                                    .frame(width: size.width*0.2)
+                                    .foregroundColor(myColor.primary.valueRaw)
+                                    .frame(width: size.width*0.9)
                                     .padding(.vertical, 10)
                                     .background{
                                         Capsule()
-                                            .fill(myColor.fourth.rawValue)
+                                            .fill(myColor.fourth.valueRaw)
                                     }
                                 
                             })
@@ -161,7 +209,7 @@ struct IntroView<ActionView: View>: View{
                 .opacity(showView ? 1 : 0)
                 
             }
-            .background(myColor.primary.rawValue)
+            .background(myColor.primary.valueRaw)
             .offset(y: hiddenWholeView ? size.height/2 : 0)
             .opacity(hiddenWholeView ? 0 : 1)
             .overlay(alignment: .topLeading){
@@ -173,7 +221,7 @@ struct IntroView<ActionView: View>: View{
                         Image(systemName: "chevron.left")
                             .font(.title2)
                             .fontWeight(.semibold)
-                            .foregroundColor(myColor.fourth.rawValue)
+                            .foregroundColor(myColor.fourth.valueRaw)
                             .contentShape(Rectangle())
                             .frame(width: 40, height: 40)
                     }

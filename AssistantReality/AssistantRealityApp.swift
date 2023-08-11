@@ -7,23 +7,36 @@
 
 import SwiftUI
 
+
 @main
 struct AssistantRealityApp: App {
     @State var splashScreen = true
+    @StateObject var router = Router()
+    
     var body: some Scene {
         WindowGroup {
-            if splashScreen{
-                SplashScreen()
-                    .onAppear{
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0){
-                            withAnimation{
-                                self.splashScreen = false
+            NavigationStack(path: $router.path) {
+                if splashScreen{
+                    SplashScreen()
+                        .onAppear{
+                            DispatchQueue.main.asyncAfter(deadline: .now() + 2.0){
+                                withAnimation{
+                                    self.splashScreen = false
+                                }
                             }
                         }
-                    }
-            }else{
-                ContentView()
+                }else{
+                    
+                    Home()
+                        .navigationDestination(for: Destination.self) { destination in
+                            ViewFactory.viewForDestination(destination)
+                        }
+                    
+                }
             }
+            .environmentObject(router)
+            
+            
            
         }
     }

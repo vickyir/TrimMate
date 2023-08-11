@@ -16,7 +16,7 @@ struct CustomSheetView: View {
             RoundedRectangle(cornerRadius: 35)
                 .background(Color.clear)
                 .frame(width: 340, height: 555)
-                .foregroundColor(myColor.secondary.rawValue)
+                .foregroundColor(myColor.secondary.valueRaw)
                 .shadow(radius: 2, x: 4, y: 4)
             
             VStack(spacing: 30){
@@ -24,14 +24,14 @@ struct CustomSheetView: View {
                 HStack{
                     Text("\(modalShow.dataHairModel.name)")
                         .font(.system(size: 21, weight: .bold))
-                        .foregroundColor(myColor.fourth.rawValue)
+                        .foregroundColor(myColor.fourth.valueRaw)
                     Spacer()
                     Button(action: {
                      modalShow.toggleBtn()
                     }, label: {
                         Image(systemName: "xmark.circle")
                             .font(.system(size: 21, weight: .bold))
-                            .foregroundColor(myColor.fourth.rawValue)
+                            .foregroundColor(myColor.fourth.valueRaw)
                     })
                   
                 }
@@ -39,14 +39,14 @@ struct CustomSheetView: View {
                 ZStack{
                     RoundedRectangle(cornerRadius: 15)
                         .frame(width: 210, height: 230)
-                        .foregroundColor(myColor.primary.rawValue)
+                        .foregroundColor(myColor.primary.valueRaw)
                     PreviewView(scene: $modalShow.dataHairModel.icon)
                         .frame(width: 210, height: 210)
                 }
                 ScrollView(.vertical, showsIndicators: false){
                     Text("\(modalShow.dataHairModel.description)")
                         .font(.system(size: 16, weight: .light))
-                        .foregroundColor(myColor.fourth.rawValue)
+                        .foregroundColor(myColor.fourth.valueRaw)
                         .padding(.horizontal)
                 }
                 .frame(height: 150)

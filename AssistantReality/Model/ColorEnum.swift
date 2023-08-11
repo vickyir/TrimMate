@@ -13,7 +13,7 @@ enum myColor: String, CaseIterable, RawRepresentable{
     case third
     case fourth
     
-    var rawValue: Color{
+    var valueRaw: Color{
         switch self{
         case .primary :
             return Color("primary")
