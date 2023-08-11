@@ -115,10 +115,10 @@ struct ARMatchingView: View {
                             ZStack{
                                 RoundedRectangle(cornerRadius: 10)
                                     .frame(maxWidth: .infinity, maxHeight: 47)
-                                    .foregroundColor(myColor.fourth.rawValue)
+                                    .foregroundColor(myColor.fourth.valueRaw)
                                 Text("Select")
                                     .font(.system(size: 14, weight: .semibold))
-                                    .foregroundColor(myColor.primary.rawValue)
+                                    .foregroundColor(myColor.primary.valueRaw)
                                     .tracking(0.54)
 
                             }
@@ -136,12 +136,12 @@ struct ARMatchingView: View {
                         ZStack{
                             RoundedRectangle(cornerRadius: 12)
                                 .frame(width: 300, height: 55)
-                                .foregroundColor(myColor.fourth.rawValue)
+                                .foregroundColor(myColor.fourth.valueRaw)
                                 .opacity(0.38)
                             Text("Tap the shape on the screen to \nchange face shape!")
                                 .font(.system(size: 20, weight: .semibold))
                                 .multilineTextAlignment(.center)
-                                .foregroundColor(myColor.primary.rawValue)
+                                .foregroundColor(myColor.primary.valueRaw)
                         }
                     }
                     
@@ -175,10 +175,10 @@ struct AnimatedGradientRoundedRectangle: View {
                         ZStack{
                             RoundedRectangle(cornerRadius: 10)
                                 .frame(width: 73, height: 73)
-                                .foregroundColor(myColor.primary.rawValue)
+                                .foregroundColor(myColor.primary.valueRaw)
                                 .overlay(
                                     RoundedRectangle(cornerRadius: 10)
-                                        .stroke(myColor.third.rawValue, lineWidth: selectedFaceShape == index ? 1 : 0)
+                                        .stroke(myColor.third.valueRaw, lineWidth: selectedFaceShape == index ? 1 : 0)
                                 )
                             Image("\(index+1)")
                                 .resizable()

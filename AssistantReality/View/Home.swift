@@ -57,12 +57,12 @@ struct Home: View {
                                     Text("START")
                                         .fontWeight(.semibold)
                                         .font(.system(size: 14))
-                                        .foregroundColor(myColor.primary.rawValue)
+                                        .foregroundColor(myColor.primary.valueRaw)
                                         .frame(width: size.width*0.9)
                                         .padding(.vertical, 10)
                                         .background{
                                             Capsule()
-                                                .fill(myColor.fourth.rawValue)
+                                                .fill(myColor.fourth.valueRaw)
                                         }
                                         .padding(.top)
                                 }
@@ -71,7 +71,7 @@ struct Home: View {
                         }
                     }
                     .frame(maxWidth: .infinity, maxHeight: .infinity)
-                    .background(myColor.primary.rawValue)
+                    .background(myColor.primary.valueRaw)
                     
                 }
             }
@@ -179,12 +179,12 @@ struct IntroView<ActionView: View>: View{
                                 Text("NEXT")
                                     .fontWeight(.semibold)
                                     .font(.system(size: 14))
-                                    .foregroundColor(myColor.primary.rawValue)
+                                    .foregroundColor(myColor.primary.valueRaw)
                                     .frame(width: size.width*0.9)
                                     .padding(.vertical, 10)
                                     .background{
                                         Capsule()
-                                            .fill(myColor.fourth.rawValue)
+                                            .fill(myColor.fourth.valueRaw)
                                     }
                                 
                             })
@@ -209,7 +209,7 @@ struct IntroView<ActionView: View>: View{
                 .opacity(showView ? 1 : 0)
                 
             }
-            .background(myColor.primary.rawValue)
+            .background(myColor.primary.valueRaw)
             .offset(y: hiddenWholeView ? size.height/2 : 0)
             .opacity(hiddenWholeView ? 0 : 1)
             .overlay(alignment: .topLeading){
@@ -221,7 +221,7 @@ struct IntroView<ActionView: View>: View{
                         Image(systemName: "chevron.left")
                             .font(.title2)
                             .fontWeight(.semibold)
-                            .foregroundColor(myColor.fourth.rawValue)
+                            .foregroundColor(myColor.fourth.valueRaw)
                             .contentShape(Rectangle())
                             .frame(width: 40, height: 40)
                     }

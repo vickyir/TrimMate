@@ -36,31 +36,31 @@ struct ListRecommendatioView: View {
                                 VStack(alignment: .leading){
                                     Text("List of Recommendation")
                                         .font(.system(size: 21, weight: .bold))
-                                        .foregroundColor(myColor.fourth.rawValue)
+                                        .foregroundColor(myColor.fourth.valueRaw)
                                     Text("\(myFaceShape.capitalized) Face Shape")
                                         .font(.system(size: 16, weight: .regular))
-                                        .foregroundColor(myColor.fourth.rawValue)
+                                        .foregroundColor(myColor.fourth.valueRaw)
                                         .opacity(0.6)
                                         .tracking(1.2)
                                     HStack{
                                         Image(systemName: "paperclip")
                                             .frame(width: 19, height: 19)
-                                            .foregroundColor(myColor.fourth.rawValue)
+                                            .foregroundColor(myColor.fourth.valueRaw)
                                         Text("Favorites")
                                             .font(.system(size: 21, weight: .bold))
-                                            .foregroundColor(myColor.fourth.rawValue)
+                                            .foregroundColor(myColor.fourth.valueRaw)
                                             .tracking(0.81)
                                     }
                                     
                                     ZStack{
                                         RoundedRectangle(cornerRadius: 15)
                                             .frame(maxWidth: .infinity, maxHeight: 194)
-                                            .foregroundColor(myColor.secondary.rawValue)
+                                            .foregroundColor(myColor.secondary.valueRaw)
                                         if isFavoriteEmpty == 0{
                                             VStack{
                                                 Text("Empty !")
                                                     .font(.system(size: 32, weight: .bold))
-                                                    .foregroundColor(myColor.fourth.rawValue)
+                                                    .foregroundColor(myColor.fourth.valueRaw)
                                             }
                                             
                                         }
@@ -72,7 +72,7 @@ struct ListRecommendatioView: View {
                                                         ZStack {
                                                             RoundedRectangle(cornerRadius: 15)
                                                                 .frame(width: 150, height: 150)
-                                                                .foregroundColor(myColor.primary.rawValue)
+                                                                .foregroundColor(myColor.primary.valueRaw)
                                                             
                                                             VStack(spacing: 0.0) {
                                                                 
@@ -91,7 +91,7 @@ struct ListRecommendatioView: View {
                                                                 
                                                                 Text("\(model.name)")
                                                                     .font(.system(size: 11, weight: .regular))
-                                                                    .foregroundColor(myColor.fourth.rawValue)
+                                                                    .foregroundColor(myColor.fourth.valueRaw)
                                                                 
                                                             }
                                                             
@@ -119,7 +119,7 @@ struct ListRecommendatioView: View {
                             
                             Text("All")
                                 .font(.system(size: 21, weight: .bold))
-                                .foregroundColor(myColor.fourth.rawValue)
+                                .foregroundColor(myColor.fourth.valueRaw)
                                 .tracking(0.81)
                                 .padding(.horizontal, 31)
                             ScrollView(.vertical, showsIndicators: false){
@@ -130,7 +130,7 @@ struct ListRecommendatioView: View {
                                             ZStack{
                                                 RoundedRectangle(cornerRadius: 15)
                                                     .frame(width: 160, height: 155)
-                                                    .foregroundColor(myColor.secondary.rawValue)
+                                                    .foregroundColor(myColor.secondary.valueRaw)
                                                 
                                                 VStack(spacing: 0.0) {
                                                   
@@ -149,7 +149,7 @@ struct ListRecommendatioView: View {
                                                     
                                                     Text("\(model.name)")
                                                         .font(.system(size: 11, weight: .regular))
-                                                        .foregroundColor(myColor.fourth.rawValue)
+                                                        .foregroundColor(myColor.fourth.valueRaw)
                                                 }
                                                 
                                             }
@@ -168,7 +168,7 @@ struct ListRecommendatioView: View {
                                                     
                                                 }, label: {
                                                     Image(systemName: model.isFavorite ? "heart.fill" : "heart")
-                                                        .foregroundColor(model.isFavorite ? myColor.third.rawValue : myColor.fourth.rawValue)
+                                                        .foregroundColor(model.isFavorite ? myColor.third.valueRaw : myColor.fourth.valueRaw)
                                                         .padding(.top, 10)
                                                         .padding(.trailing, 10)
                                                 })
@@ -185,12 +185,12 @@ struct ListRecommendatioView: View {
                             .padding(.top, 10)
                         }
                         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
-                        .background(myColor.primary.rawValue)
+                        .background(myColor.primary.valueRaw)
                         .overlay(alignment: .bottom){
                             ZStack{
                                 RoundedRectangle(cornerRadius: 20)
                                     .frame(maxWidth: .infinity, maxHeight: 73)
-                                    .foregroundColor(myColor.fourth.rawValue)
+                                    .foregroundColor(myColor.fourth.valueRaw)
                                     .opacity(0.8)
                                 
                                 HStack(spacing: 25){
@@ -201,13 +201,13 @@ struct ListRecommendatioView: View {
                                         ZStack{
                                             Circle()
                                                 .frame(width: 54, height: 54)
-                                                .foregroundColor(myColor.fourth.rawValue)
+                                                .foregroundColor(myColor.fourth.valueRaw)
                                             Circle()
                                                 .frame(width: 46, height: 46)
-                                                .foregroundColor(myColor.primary.rawValue)
+                                                .foregroundColor(myColor.primary.valueRaw)
                                             
                                             Image(systemName: "arrow.triangle.2.circlepath.camera.fill")
-                                                .foregroundColor(myColor.fourth.rawValue)
+                                                .foregroundColor(myColor.fourth.valueRaw)
                                             
                                         }
                                     }
@@ -221,12 +221,12 @@ struct ListRecommendatioView: View {
                                         ZStack{
                                             Circle()
                                                 .frame(width: 54, height: 54)
-                                                .foregroundColor(myColor.fourth.rawValue)
+                                                .foregroundColor(myColor.fourth.valueRaw)
                                             Circle()
                                                 .frame(width: 46, height: 46)
-                                                .foregroundColor(myColor.primary.rawValue)
+                                                .foregroundColor(myColor.primary.valueRaw)
                                             Image(systemName: "person.and.background.dotted")
-                                                .foregroundColor(myColor.fourth.rawValue)
+                                                .foregroundColor(myColor.fourth.valueRaw)
                                             
                                         }
                                     }
